@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climatizadores Evaporativos Portáteis | Chiller Peças</title>
+<link rel="icon" type="image/svg+xml" href="Manual de Marca/favicon.ico.svg">
+<meta name="description" content="Climatizadores evaporativos portáteis Chiller Peças. Economia de até 90% comparado ao ar-condicionado. Motor WEG, certificação INMETRO, fabricação nacional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ── RESET & BASE ───────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#085ba7;
+  --blue-light:#108bd1;
+  --blue-deep:#063d6e;
+  --orange:#ff901c;
+  --green-wa:#25D366;
+  --green-wa-hover:#1fb855;
+  --bg-body:#ffffff;
+  --bg-alt:#efefef;
+  --text:#1a1a2e;
+  --text-muted:#4a4a5a;
+  --neutral-100:#f5f5f5;
+  --neutral-200:#e0e0e0;
+  --neutral-300:#c0c0c0;
+  --neutral-800:#2a2a2a;
+  --white:#fff;
+  --font-heading:'Anton',sans-serif;
+  --font-body:'Quicksand',sans-serif;
+  --header-h:64px;
+}
+html{scroll-behavior:smooth;scroll-padding-top:var(--header-h)}
+body{
+  font-family:var(--font-body);
+  font-weight:400;
+  color:var(--text);
+  background:var(--bg-body);
+  line-height:1.6;
+  font-size:clamp(1rem,0.95rem + 0.25vw,1.125rem);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+h1,h2,h3{
+  font-family:var(--font-heading);
+  text-wrap:balance;
+  line-height:1.1;
+}
+h1{font-size:clamp(2rem,1.4rem + 3vw,3.75rem);font-weight:400;letter-spacing:0.01em;text-transform:uppercase}
+h2{font-size:clamp(1.6rem,1.2rem + 2vw,2.75rem);font-weight:400;letter-spacing:0.01em;text-transform:uppercase}
+h3{font-size:clamp(1.15rem,1rem + 0.75vw,1.5rem);font-weight:400;text-transform:uppercase}
+p{max-width:62ch}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* ── UTILITY ────────────────────────────────────── */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(1rem,3vw,2.5rem)}
+
+/* ── CTA BUTTON ─────────────────────────────────── */
+.cta-wa{
+  display:inline-flex;align-items:center;gap:0.6rem;
+  background:var(--green-wa);color:var(--white);
+  font-family:var(--font-heading);font-weight:400;
+  font-size:clamp(0.95rem,0.9rem + 0.25vw,1.1rem);
+  padding:0.85rem 1.8rem;border-radius:6px;
+  min-height:48px;
+  transition:background 0.2s,transform 0.15s;
+  text-decoration:none;
+}
+.cta-wa:hover,.cta-wa:focus-visible{background:var(--green-wa-hover);transform:translateY(-1px)}
+.cta-wa:active{transform:translateY(0)}
+.cta-wa svg{width:22px;height:22px;flex-shrink:0}
+
+/* ── HEADER ─────────────────────────────────────── */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  height:var(--header-h);
+  background:var(--blue-deep);
+  display:flex;align-items:center;
+  transition:box-shadow 0.3s;
+  border-bottom:3px solid var(--orange);
+}
+.site-header.scrolled{box-shadow:0 2px 12px rgba(0,0,0,0.1)}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  width:100%;max-width:1280px;margin:0 auto;
+  padding:0 clamp(1rem,3vw,2.5rem);
+}
+.logo{
+  font-family:var(--font-heading);font-weight:400;
+  color:var(--white);font-size:1.15rem;
+  display:flex;align-items:center;gap:0.5rem;
+  white-space:nowrap;
+}
+.logo span{opacity:0.6;font-weight:600;font-size:0.85em}
+.header-nav{display:none;gap:1.8rem}
+.header-nav a{
+  color:rgba(255,255,255,0.75);font-size:0.9rem;font-weight:600;
+  transition:color 0.2s;
+}
+.header-nav a:hover{color:var(--white)}
+.header-cta-wrap .cta-wa{padding:0.55rem 1.2rem;font-size:0.88rem;min-height:40px}
+.menu-toggle{display:flex;flex-direction:column;gap:5px;padding:8px;cursor:pointer;background:none;border:none}
+.menu-toggle span{display:block;width:22px;height:2px;background:var(--white);border-radius:1px;transition:0.3s}
+
+@media(min-width:768px){
+  .header-nav{display:flex}
+  .menu-toggle{display:none}
+}
+
+/* Mobile menu */
+.mobile-menu{
+  position:fixed;top:var(--header-h);left:0;right:0;
+  background:var(--blue-deep);
+  padding:1rem 1.5rem 1.5rem;
+  display:none;flex-direction:column;gap:0.25rem;
+  z-index:99;
+  border-top:1px solid rgba(8,91,167,0.2);
+}
+.mobile-menu.open{display:flex}
+.mobile-menu a{
+  color:rgba(255,255,255,0.75);font-size:1rem;font-weight:600;
+  padding:0.75rem 0;
+  border-bottom:1px solid rgba(8,91,167,0.1);
+  transition:color 0.2s;
+}
+.mobile-menu a:hover{color:var(--white)}
+
+/* ── HERO ───────────────────────────────────────── */
+.hero{
+  min-height:calc(100vh - var(--header-h) - 52px);
+  min-height:calc(100dvh - var(--header-h) - 52px);
+  background:linear-gradient(90deg,rgba(4,30,58,0.94) 0%,rgba(4,30,58,0.80) 34%,rgba(4,30,58,0.42) 60%,rgba(4,30,58,0.10) 100%),url("climatizadores-fotos/hero-novo.png") center center/cover no-repeat var(--blue);
+  display:flex;align-items:center;
+  position:relative;
+  overflow:hidden;
+  padding-top:var(--header-h);
+}
+.hero-inner{
+  display:grid;
+  grid-template-columns:1fr;
+  width:100%;max-width:1280px;margin:0 auto;
+  padding:clamp(1.5rem,3vw,2.5rem) clamp(1rem,3vw,2.5rem);
+  position:relative;z-index:2;
+}
+.hero-content{
+  display:flex;flex-direction:column;
+  justify-content:center;
+  gap:1.5rem;
+}
+.hero h1{color:var(--white);max-width:14ch;text-shadow:0 2px 16px rgba(0,0,0,0.35)}
+.hero-subtitle{
+  color:rgba(255,255,255,0.82);
+  font-size:clamp(1rem,0.9rem + 0.5vw,1.25rem);
+  font-weight:400;max-width:38ch;
+  text-shadow:0 1px 10px rgba(0,0,0,0.3);
+}
+.hero-badges{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.25rem}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:0.35rem;
+  background:var(--orange);
+  color:var(--white);
+  font-family:var(--font-body);font-weight:600;
+  font-size:0.8rem;
+  padding:0.35rem 0.85rem;border-radius:100px;
+  backdrop-filter:blur(4px);
+}
+.hero-badge svg{width:14px;height:14px;opacity:0.85}
+.hero-cta-group{display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center}
+.hero-cta-group .cta-wa{font-size:clamp(1rem,0.95rem + 0.25vw,1.15rem);padding:1rem 2rem}
+.hero-img-wrap{display:none}
+
+@media(min-width:1024px){
+  .hero-content{max-width:640px}
+}
+
+/* ── TRUST BAR ──────────────────────────────────── */
+.trust-bar{
+  background:var(--blue-deep);
+  padding:1.25rem 0;
+  border-top:1px solid rgba(8,91,167,0.2);
+}
+.trust-bar-inner{
+  display:flex;flex-wrap:wrap;
+  justify-content:center;align-items:center;
+  gap:1.5rem 2.5rem;
+}
+.trust-item{
+  display:flex;align-items:center;gap:0.5rem;
+  color:rgba(255,255,255,0.65);
+  font-family:var(--font-heading);font-weight:400;
+  font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;
+}
+.trust-item svg{width:20px;height:20px;opacity:0.7}
+
+/* ── DIFERENCIAIS ───────────────────────────────── */
+.diferenciais{background:var(--bg-body);padding:clamp(3rem,6vw,6rem) 0}
+.section-label{
+  font-family:var(--font-heading);font-weight:400;
+  font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;
+  color:var(--orange);margin-bottom:0.75rem;
+}
+.diferenciais h2{margin-bottom:clamp(1.5rem,3vw,3rem)}
+
+.diff-grid-legacy{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1px;
+  background:var(--neutral-200);
+  border-radius:8px;
+  overflow:hidden;
+}
+.diff-item{
+  background:var(--white);
+  padding:clamp(1.25rem,2vw,2rem);
+  display:flex;flex-direction:column;gap:0.6rem;
+}
+.diff-item-icon{
+  width:44px;height:44px;
+  background:var(--blue);
+  border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--white);flex-shrink:0;
+}
+.diff-item-icon svg{width:22px;height:22px}
+.diff-item h3{font-size:1.05rem}
+.diff-item p{font-size:0.92rem;color:var(--text-muted);max-width:45ch}
+
+/* Featured diff item */
+.diff-item.featured{
+  background:var(--blue);
+  color:var(--white);
+}
+.diff-item.featured p{color:rgba(255,255,255,0.7)}
+.diff-item.featured .diff-item-icon{background:#108bd1}
+
+@media(min-width:640px){
+  .diff-grid{grid-template-columns:1fr 1fr}
+  .diff-item.featured{grid-column:1 / -1}
+}
+@media(min-width:1024px){
+  .diff-grid{grid-template-columns:repeat(3,1fr)}
+  .diff-item.featured{grid-column:1 / 3;flex-direction:row;align-items:flex-start;gap:1.5rem}
+}
+
+/* ── EDUCATIVA ──────────────────────────────────── */
+.educativa{
+  background:var(--blue);
+  color:var(--white);
+  padding:clamp(3rem,6vw,6rem) 0;
+}
+.educativa-inner{
+  display:grid;grid-template-columns:1fr;gap:2rem;
+  align-items:center;
+}
+.educativa h2{color:var(--white)}
+.educativa-text p{color:rgba(255,255,255,0.7);margin-bottom:1rem}
+.educativa-text p:last-child{margin-bottom:0}
+.educativa-highlight{
+  font-family:var(--font-heading);font-weight:400;
+  font-size:clamp(2.5rem,2rem + 3vw,5rem);
+  color:var(--white);
+  line-height:1;letter-spacing:-0.02em;
+}
+.educativa-highlight small{
+  display:block;font-size:0.3em;font-weight:600;
+  color:rgba(255,255,255,0.5);letter-spacing:0;
+  margin-top:0.5rem;
+}
+.spec-strip{
+  display:flex;flex-wrap:wrap;gap:0;
+  margin-top:1.5rem;
+  border-radius:6px;overflow:hidden;
+}
+.spec-strip-item{
+  flex:1 1 140px;
+  background:#074a8a;
+  padding:1rem 1.25rem;
+  border-right:1px solid rgba(8,91,167,0.2);
+}
+.spec-strip-item:last-child{border-right:none}
+.spec-strip-item .spec-val{
+  font-family:var(--font-heading);font-weight:400;
+  font-size:clamp(1.5rem,1.2rem + 1.5vw,2.25rem);
+  color:var(--white);line-height:1.1;
+}
+.spec-strip-item .spec-label{
+  font-size:0.78rem;color:rgba(255,255,255,0.55);
+  font-weight:600;margin-top:0.15rem;
+}
+
+@media(min-width:1024px){
+  .educativa-inner{grid-template-columns:1fr 1fr;gap:4rem}
+}
+
+/* ── MODELOS ────────────────────────────────────── */
+.modelos{background:var(--bg-body);padding:clamp(3rem,6vw,6rem) 0}
+.modelos h2{margin-bottom:0.5rem}
+.modelos .section-desc{color:var(--text-muted);margin-bottom:clamp(1.5rem,3vw,3rem)}
+
+.model-list{display:flex;flex-direction:column;gap:1px;background:var(--neutral-200);border-radius:8px;overflow:hidden}
+.model-row{
+  background:var(--white);
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+  transition:background 0.2s;
+}
+.model-row:hover{background:#f7f9fc}
+.model-img{
+  aspect-ratio:4/3;overflow:hidden;
+  background:var(--neutral-100);
+  display:flex;align-items:center;justify-content:center;
+}
+.model-img img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.model-row:hover .model-img img{transform:scale(1.03)}
+.model-info{
+  padding:clamp(1.25rem,2vw,2rem);
+  display:flex;flex-direction:column;gap:0.75rem;
+}
+.model-name{
+  font-family:var(--font-heading);font-weight:400;
+  font-size:clamp(1.3rem,1.1rem + 1vw,1.75rem);
+  color:var(--blue);
+}
+.model-tagline{font-size:0.92rem;color:var(--text-muted)}
+.model-specs{
+  display:flex;flex-wrap:wrap;gap:0;
+  border-radius:6px;overflow:hidden;
+  margin:0.25rem 0;
+}
+.model-spec{
+  flex:1 1 100px;
+  background:var(--blue);
+  padding:0.75rem 1rem;
+  border-right:1px solid rgba(8,91,167,0.2);
+}
+.model-spec:last-child{border-right:none}
+.model-spec .spec-val{
+  font-family:var(--font-heading);font-weight:400;
+  font-size:1.2rem;color:var(--white);line-height:1.2;
+}
+.model-spec .spec-label{font-size:0.72rem;color:rgba(255,255,255,0.55);font-weight:600;margin-top:0.1rem}
+.model-cta{margin-top:auto;padding-top:0.5rem}
+.model-cta .cta-wa{width:100%;justify-content:center}
+
+@media(min-width:768px){
+  .model-row{grid-template-columns:280px 1fr}
+  .model-cta .cta-wa{width:auto}
+}
+@media(min-width:1024px){
+  .model-row{grid-template-columns:320px 1fr auto;align-items:center}
+  .model-cta{padding:2rem;margin-top:0}
+}
+
+/* ── APLICACOES ─────────────────────────────────── */
+.aplicacoes{
+  background:var(--blue);
+  color:var(--white);
+  padding:clamp(3rem,6vw,6rem) 0;
+}
+.aplicacoes h2{color:var(--white);margin-bottom:0.5rem}
+.aplicacoes .section-desc{color:rgba(255,255,255,0.6);margin-bottom:clamp(1.5rem,3vw,2.5rem)}
+
+.app-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:clamp(0.5rem,1vw,0.75rem);
+}
+.app-card{
+  position:relative;
+  border-radius:8px;
+  overflow:hidden;
+  aspect-ratio:3/2;
+}
+.app-card img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 0.5s ease;
+}
+.app-card:hover img{transform:scale(1.05)}
+.app-card-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(6,30,55,0.85) 0%,transparent 60%);
+  display:flex;align-items:flex-end;
+  padding:clamp(0.75rem,1.5vw,1.5rem);
+}
+.app-card-overlay span{
+  font-family:var(--font-heading);font-weight:400;
+  font-size:clamp(0.85rem,0.75rem + 0.5vw,1.1rem);
+  color:var(--white);
+}
+
+@media(min-width:640px){.app-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1024px){
+  .app-grid{grid-template-columns:repeat(3,1fr)}
+  .app-card:first-child{grid-row:1/3;aspect-ratio:auto}
+}
+
+/* ── PROVA SOCIAL ───────────────────────────────── */
+.prova-social{background:var(--bg-alt);padding:clamp(3rem,6vw,6rem) 0}
+.prova-social h2{margin-bottom:clamp(1.5rem,3vw,3rem)}
+
+.testimonials{display:grid;grid-template-columns:1fr;gap:clamp(1rem,2vw,1.5rem)}
+.testimonial{
+  background:var(--white);
+  border-radius:8px;
+  overflow:hidden;
+  display:grid;grid-template-columns:1fr;
+}
+.testimonial-img{
+  aspect-ratio:16/9;overflow:hidden;
+  background:var(--neutral-100);
+}
+.testimonial-img img{width:100%;height:100%;object-fit:cover}
+.testimonial-body{padding:clamp(1.25rem,2vw,2rem);display:flex;flex-direction:column;gap:0.75rem}
+.testimonial-stars{display:flex;gap:2px;color:#ff901c}
+.testimonial-stars svg{width:16px;height:16px}
+.testimonial-quote{font-size:0.95rem;color:var(--text);font-style:italic;line-height:1.6}
+.testimonial-author{font-family:var(--font-heading);font-weight:400;font-size:0.88rem;color:var(--blue)}
+.testimonial-meta{font-size:0.8rem;color:var(--text-muted)}
+
+@media(min-width:768px){
+  .testimonials{grid-template-columns:repeat(2,1fr)}
+  .testimonial:first-child{grid-column:1/-1;grid-template-columns:1fr 1fr}
+  .testimonial:first-child .testimonial-img{aspect-ratio:auto}
+}
+
+/* ── FAQ ────────────────────────────────────────── */
+.faq{
+  background:var(--blue);
+  color:var(--white);
+  padding:clamp(3rem,6vw,6rem) 0;
+}
+.faq h2{color:var(--white);margin-bottom:clamp(1.5rem,3vw,3rem)}
+
+.faq-list{
+  max-width:800px;
+  display:flex;flex-direction:column;
+}
+.faq-item{border-bottom:1px solid rgba(8,91,167,0.25)}
+.faq-item:first-child{border-top:1px solid rgba(8,91,167,0.25)}
+.faq-trigger{
+  width:100%;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.15rem 0;
+  font-family:var(--font-heading);font-weight:400;
+  font-size:clamp(0.95rem,0.9rem + 0.25vw,1.1rem);
+  color:var(--white);
+  cursor:pointer;
+  background:none;border:none;text-align:left;
+  gap:1rem;
+  min-height:48px;
+}
+.faq-trigger:hover{color:#ff901c}
+.faq-chevron{
+  width:20px;height:20px;flex-shrink:0;
+  transition:transform 0.3s;
+  color:rgba(255,255,255,0.5);
+}
+.faq-item.open .faq-chevron{transform:rotate(180deg)}
+.faq-answer{
+  display:grid;grid-template-rows:0fr;overflow:hidden;
+  transition:grid-template-rows 0.35s ease;
+}
+.faq-item.open .faq-answer{grid-template-rows:1fr}
+.faq-answer-inner{
+  padding:0 0 1.25rem;
+  color:rgba(255,255,255,0.6);
+  font-size:0.95rem;
+  line-height:1.7;
+}
+
+/* ── CTA FINAL ──────────────────────────────────── */
+.cta-final{background:var(--bg-body);padding:clamp(3rem,6vw,6rem) 0}
+.cta-final-inner{
+  display:grid;grid-template-columns:1fr;gap:clamp(2rem,4vw,3rem);
+  align-items:start;
+}
+.cta-final h2{margin-bottom:0.75rem}
+.cta-final-text p{color:var(--text-muted);margin-bottom:1.5rem}
+
+.contact-form{
+  background:var(--white);
+  border-radius:8px;
+  padding:clamp(1.5rem,3vw,2.5rem);
+  box-shadow:0 1px 3px rgba(8,91,167,0.08);
+}
+.form-title{
+  font-family:var(--font-heading);font-weight:400;
+  font-size:1.15rem;margin-bottom:1.25rem;
+}
+.form-group{margin-bottom:1rem}
+.form-group label{
+  display:block;font-weight:600;font-size:0.85rem;
+  color:var(--text-muted);margin-bottom:0.35rem;
+}
+.form-group input,.form-group select{
+  width:100%;
+  padding:0.7rem 0.9rem;
+  border:1.5px solid var(--neutral-300);
+  border-radius:6px;
+  font-family:var(--font-body);
+  font-size:0.95rem;
+  color:var(--text);
+  background:var(--bg-body);
+  transition:border-color 0.2s;
+  min-height:48px;
+}
+.form-group input:focus,.form-group select:focus{
+  outline:none;
+  border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(8,91,167,0.15);
+}
+.form-submit{
+  width:100%;margin-top:0.5rem;
+}
+
+@media(min-width:1024px){
+  .cta-final-inner{grid-template-columns:1fr 1fr}
+}
+
+/* ── FOOTER ─────────────────────────────────────── */
+.site-footer{
+  background:var(--blue-deep);
+  color:rgba(255,255,255,0.55);
+  padding:clamp(2rem,4vw,3rem) 0;
+}
+.footer-inner{
+  display:grid;grid-template-columns:1fr;gap:1.5rem;
+}
+.footer-brand{
+  font-family:var(--font-heading);font-weight:400;
+  color:var(--white);font-size:1.1rem;margin-bottom:0.5rem;
+}
+.footer-info p{font-size:0.88rem;line-height:1.6;margin-bottom:0.25rem}
+.footer-links{display:flex;flex-direction:column;gap:0.35rem}
+.footer-links a{font-size:0.88rem;transition:color 0.2s}
+.footer-links a:hover{color:var(--white)}
+.footer-copy{
+  margin-top:1.5rem;padding-top:1rem;
+  border-top:1px solid rgba(8,91,167,0.25);
+  font-size:0.8rem;color:rgba(255,255,255,0.4);
+}
+@media(min-width:768px){
+  .footer-inner{grid-template-columns:2fr 1fr 1fr}
+}
+
+/* ── STICKY MOBILE CTA ──────────────────────────── */
+.sticky-cta{
+  position:fixed;bottom:0;left:0;right:0;
+  background:var(--white);
+  padding:0.75rem 1rem;
+  box-shadow:0 -2px 8px rgba(0,0,0,0.08);
+  z-index:90;
+  display:none;
+  border-top:1px solid var(--neutral-200);
+}
+.sticky-cta .cta-wa{width:100%;justify-content:center;font-size:1rem}
+.sticky-cta.visible{display:block}
+
+@media(min-width:768px){
+  .sticky-cta{display:none !important}
+}
+
+/* ── ANIMATIONS ─────────────────────────────────── */
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity 0.6s ease,transform 0.6s ease;
+}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.slide-right{
+  opacity:0;
+  transform:translateX(60px);
+  transition:opacity 0.4s ease,transform 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.slide-right.visible{opacity:1;transform:translateX(0)}
+
+/* ── BADGE POPULAR ──────────────────────────────── */
+.badge-popular{
+  display:inline-block;
+  background:#ff901c;color:#fff;
+  font-family:var(--font-heading);font-weight:400;
+  font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;
+  padding:0.3rem 0.85rem;border-radius:100px;
+  width:fit-content;
+}
+
+/* ── ECONOMY CALLOUT ───────────────────────────── */
+.economy-callout{
+  background:var(--orange);color:var(--white);
+  border-radius:8px;padding:clamp(1.25rem,2vw,2rem);
+  text-align:center;margin-top:0.5rem;
+}
+.economy-callout .economy-number{
+  font-family:var(--font-heading);font-weight:400;
+  font-size:clamp(3rem,2.5rem + 3vw,5rem);
+  line-height:1;display:block;
+}
+.economy-callout .economy-label{
+  font-size:clamp(0.9rem,0.85rem + 0.25vw,1.05rem);
+  font-weight:600;margin-top:0.35rem;display:block;
+  opacity:0.9;
+}
+
+/* ── CTA HELPER TEXT ───────────────────────────── */
+.cta-helper{
+  font-size:0.88rem;color:var(--text-muted);
+  margin-top:0.75rem;max-width:42ch;
+  font-style:italic;
+}
+
+@media(prefers-reduced-motion:reduce){
+  .slide-right{opacity:1;transform:none;transition:none}
+  .model-img img{transition:none}
+  .app-card img{transition:none}
+  .faq-chevron{transition:none}
+  .faq-answer{transition:none}
+  .cta-wa{transition:none}
+}
+
+/* ── DIFERENCIAIS HERO (from LP4) ── */
+.diferenciais-hero{padding:clamp(2rem,4vw,3rem) 0 clamp(4px,0.5vw,8px)}
+@media(min-width:768px){.diff-hero-top{grid-template-columns:1fr 1fr !important}}
+.hero-headline{font-size:clamp(28px,5vw,52px);font-weight:400;letter-spacing:0.02em;color:var(--text);max-width:18ch;text-transform:uppercase;margin-bottom:12px}
+.hero-sub{font-size:clamp(16px,2vw,20px);color:var(--text-muted);max-width:52ch;margin-bottom:clamp(28px,4vw,48px);line-height:1.5}
+.install-strip{display:flex;gap:16px;overflow:hidden;margin:0 -20px;padding:0 0 16px;position:relative}
+.install-strip-track{display:flex;gap:16px;animation:marquee 25s linear infinite;width:max-content}
+.install-strip:hover .install-strip-track{animation-play-state:paused}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.install-card{flex:0 0 260px;border-radius:10px;overflow:hidden;background:var(--white);border:1px solid #e8e8e8}
+.install-card img{width:260px;height:170px;object-fit:cover}
+.install-card figcaption{padding:10px 14px;font-size:13px;font-weight:600;color:var(--text-muted);font-family:var(--font-body)}
+.hero-product{margin-top:clamp(32px,5vw,56px);display:flex;flex-direction:column;align-items:center;gap:clamp(24px,4vw,40px)}
+.hero-product img{max-width:380px;width:100%}
+.cta-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--green-wa);color:var(--white);font-family:var(--font-body);font-weight:700;font-size:clamp(16px,2vw,18px);padding:0 32px;height:48px;min-height:48px;border-radius:10px;transition:background 0.15s;text-align:center}
+.cta-primary:hover{background:var(--green-wa-hover)}
+.cta-primary svg{width:22px;height:22px;fill:currentColor;flex-shrink:0}
+.cta-secondary{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:var(--blue);font-family:var(--font-body);font-weight:700;font-size:15px;padding:0 32px;height:48px;min-height:48px;border-radius:10px;border:2px solid var(--blue);transition:background 0.15s,color 0.15s}
+.cta-secondary:hover{background:var(--blue);color:var(--white)}
+
+/* ── ECONOMIA SECTION (from LP4) ── */
+.diff-section{padding:clamp(32px,5vw,56px) 0}
+#economia.diff-section{background:var(--bg-alt);padding-top:clamp(20px,3vw,36px)}
+.diff-section .diff-grid{display:grid;grid-template-columns:1fr;gap:clamp(24px,4vw,48px)}
+@media(min-width:768px){.diff-section .diff-grid{grid-template-columns:1fr 1fr;align-items:center}}
+.diff-label{font-family:var(--font-heading);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;color:var(--blue);margin-bottom:12px}
+.diff-title{font-size:clamp(22px,3.5vw,36px);font-weight:400;letter-spacing:0.02em;text-transform:uppercase;margin-bottom:16px}
+.diff-text{font-size:clamp(15px,1.8vw,17px);color:var(--text-muted);max-width:62ch;line-height:1.65;margin-bottom:20px}
+.diff-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.diff-list li{display:flex;align-items:flex-start;gap:10px;font-size:15px;color:var(--text)}
+.diff-list li::before{content:'';display:block;width:20px;height:20px;flex-shrink:0;margin-top:2px;background:var(--green-wa);border-radius:50%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath d='M8.5 13.3 5.2 10l1.1-1.1 2.2 2.2 4.8-4.8 1.1 1.1z'/%3E%3C/svg%3E");background-size:20px}
+.diff-visual img{border-radius:12px;width:100%}
+.num-highlight{display:inline-flex;align-items:baseline;gap:8px;font-family:var(--font-heading);font-weight:400;font-size:clamp(40px,6vw,60px);color:var(--orange);margin-bottom:8px;text-shadow:0 2px 12px rgba(255,144,28,0.18)}
+.num-highlight .unit{font-size:clamp(16px,2vw,22px);font-weight:700;color:var(--text-muted)}
+
+/* ── MODELS SECTION (from LP4) ── */
+.models-section{background:var(--bg-alt);padding:clamp(48px,8vw,96px) 0}
+.models-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.model-card{background:var(--white);border:1px solid #e8e8e8;border-radius:12px;padding:24px;text-align:center;transition:border-color 0.15s;position:relative;display:flex;flex-direction:column}
+.cta-model{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;font-family:var(--font-body);font-weight:700;font-size:0.9rem;padding:12px 20px;border-radius:8px;margin-top:auto;transition:background 0.2s;text-decoration:none;min-height:44px}
+.cta-model:hover{background:#1da851}
+.model-card:hover{border-color:var(--blue)}
+.model-badge{position:absolute;top:12px;right:12px;background:var(--orange);color:var(--white);font-family:var(--font-body);font-weight:700;font-size:12px;padding:5px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:0.04em;z-index:2}
+.model-card img{width:100%;max-width:200px;margin:0 auto 16px;aspect-ratio:1;object-fit:contain}
+.model-card .model-name{font-family:var(--font-heading);font-weight:400;font-size:20px;margin-bottom:4px;text-transform:uppercase}
+.model-cap{font-size:14px;color:var(--text-muted);margin-bottom:12px}
+.model-card .model-specs{list-style:none;text-align:left;font-size:14px;color:var(--text-muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid #e8e8e8;padding-top:12px}
+.model-card .model-specs li{display:flex;justify-content:space-between}
+.model-card .model-specs li strong{color:var(--text);font-weight:600}
+
+/* ── COMPARISON TABLE (from LP3) ── */
+.comparison{padding:clamp(3rem,6vw,5rem) 0}
+.comparison-inner{max-width:1200px;margin:0 auto;padding:0 clamp(1rem,3vw,2.5rem)}
+.comparison h2{font-size:clamp(1.6rem,1.2rem + 2vw,2.75rem);font-weight:400;letter-spacing:0.01em;text-transform:uppercase;text-align:center;margin-bottom:2rem}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.comparison table{width:100%;border-collapse:collapse;min-width:600px}
+.comparison thead th{background:var(--blue);color:#fff;font-family:var(--font-heading);font-weight:700;font-size:0.85rem;padding:0.85rem 1rem;text-align:left;text-transform:uppercase;letter-spacing:0.04em}
+.comparison thead th:first-child{border-radius:6px 0 0 0}
+.comparison thead th:last-child{border-radius:0 6px 0 0}
+.comparison tbody td{padding:0.8rem 1rem;border-bottom:1px solid #e8e8e8;font-size:0.85rem;vertical-align:top}
+.comparison tbody tr:hover{background:#f5f5f5}
+.comparison tbody td:first-child{font-weight:600;color:var(--text)}
+.comparison .highlight-col{background:#f5f5f5}
+.compare-mobile{display:none}
+@media(max-width:767px){
+  .table-wrap{display:none}
+  .compare-mobile{display:grid;gap:1rem}
+  .compare-card{background:#fff;border:1px solid #e8e8e8;border-radius:10px;padding:1.1rem 1.25rem}
+  .compare-card h3{font-family:var(--font-heading);font-weight:400;font-size:1.1rem;color:var(--blue);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap}
+  .compare-card ul{list-style:none;display:flex;flex-direction:column;gap:0.1rem}
+  .compare-card li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-size:0.85rem;padding:0.5rem 0;border-bottom:1px solid #f0f0f0}
+  .compare-card li:last-child{border-bottom:none}
+  .compare-card li span{color:var(--text-muted)}
+  .compare-card li strong{color:var(--text);font-weight:600;text-align:right}
+}
+@media(min-width:768px){.compare-mobile{display:none !important}}
+
+/* ── APLICACOES SECTION (from LP5) ── */
+.aplicacoes-section{padding:clamp(3rem,6vw,6rem) 0}
+.aplicacoes-section h2{margin-bottom:0.5rem}
+.aplicacoes-intro{color:var(--text-muted);margin-bottom:2.5rem;max-width:none;text-align:justify;text-align-last:left}
+.aplicacoes-grid{display:grid;gap:1rem}
+@media(min-width:600px){.aplicacoes-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.aplicacoes-grid{grid-template-columns:repeat(3,1fr)}}
+.aplicacao-card{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/2}
+.aplicacao-card img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease}
+.aplicacao-card:hover img{transform:scale(1.04)}
+.aplicacao-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(4,45,84,0.85) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem}
+.aplicacao-tag{font-family:var(--font-heading);font-weight:400;text-transform:uppercase;font-size:0.65rem;letter-spacing:0.08em;color:#ffb05c;margin-bottom:0.3rem}
+.aplicacao-name{font-family:var(--font-heading);font-weight:400;font-size:1.1rem;color:#fff;margin-bottom:0.2rem;text-transform:uppercase}
+.aplicacao-spec{font-size:0.8rem;color:#a3d5ef}
+
+/* ── SOCIAL SECTION (from LP5) ── */
+.social-section{padding:clamp(3rem,6vw,6rem) 0;background:var(--blue);color:#f0f4f8}
+.social-section h2{color:#f0f4f8;margin-bottom:2.5rem}
+.social-grid{display:grid;gap:1.5rem}
+@media(min-width:768px){.social-grid{grid-template-columns:repeat(3,1fr)}}
+.social-card{background:rgba(10,111,190,0.35);border-radius:10px;padding:1.5rem;border:1px solid rgba(16,139,209,0.25)}
+.social-stars{color:var(--orange);font-size:0.85rem;margin-bottom:0.75rem;letter-spacing:2px}
+.social-quote{font-size:0.95rem;line-height:1.55;color:#d1eaf7;margin-bottom:1rem;font-style:italic}
+.social-author{font-family:var(--font-heading);font-weight:400;font-size:0.85rem;color:#f0f4f8;text-transform:uppercase}
+.social-role{font-size:0.78rem;color:#6dbde5;margin-top:0.15rem}
+.section-label-light{color:#ffb05c}
+
+/* ── FAQ SECTION (from LP4) ── */
+.faq-section{background:var(--white);border-top:1px solid #e8e8e8;padding:clamp(48px,8vw,96px) 0}
+.faq-section .diff-label{text-align:center;margin-bottom:8px}
+.faq-section .diff-title{text-align:center;max-width:22ch;margin:0 auto clamp(28px,4vw,48px)}
+.faq-section .faq-list{max-width:720px;margin:0 auto}
+.faq-section .faq-item{border-bottom:1px solid #e8e8e8}
+.faq-section .faq-item summary{display:flex;align-items:center;justify-content:space-between;padding:20px 0;font-family:var(--font-body);font-weight:700;font-size:clamp(15px,2vw,17px);cursor:pointer;list-style:none}
+.faq-section .faq-item summary::-webkit-details-marker{display:none}
+.faq-section .faq-item summary::after{content:'+';font-size:24px;font-weight:600;color:var(--blue);transition:transform 0.2s}
+.faq-section .faq-item[open] summary::after{content:'\2212';transform:none}
+.faq-section .faq-answer{padding:0 0 20px;font-size:15px;color:var(--text-muted);line-height:1.65;max-width:62ch}
+
+/* ── CTA SECTION (from LP5) ── */
+.cta-section{padding:clamp(3rem,6vw,6rem) 0;background:var(--blue);color:#f0f4f8}
+.cta-section h2{color:#f0f4f8;margin-bottom:0.5rem}
+.cta-subtitle{color:#a3d5ef;margin-bottom:2.5rem}
+.cta-layout{display:grid;gap:2.5rem}
+@media(min-width:768px){.cta-layout{grid-template-columns:1fr 1fr;gap:3rem}}
+.cta-whatsapp-block{display:flex;flex-direction:column;justify-content:space-between}
+.cta-whatsapp-action{display:flex;flex-direction:column;gap:0.75rem}
+.cta-whatsapp-block p{color:#a3d5ef;margin-bottom:1.5rem;font-size:1.05rem}
+.cta-helper{font-size:0.88rem;color:rgba(255,255,255,0.6);margin-top:0.75rem;max-width:42ch;font-style:italic}
+.cta-form{background:rgba(12,125,204,0.3);border-radius:10px;padding:2rem;border:1px solid rgba(16,139,209,0.3)}
+.cta-form label{display:block;font-family:var(--font-heading);font-weight:400;text-transform:uppercase;font-size:0.78rem;letter-spacing:0.04em;color:#a3d5ef;margin-bottom:0.35rem}
+.cta-form input,.cta-form select,.cta-form textarea{width:100%;padding:0.7rem 0.9rem;border-radius:6px;border:1px solid rgba(16,139,209,0.4);background:rgba(255,255,255,0.95);color:var(--text);font-family:var(--font-body);font-size:0.95rem;margin-bottom:1rem;transition:border-color 0.2s ease}
+.cta-form input:focus,.cta-form select:focus,.cta-form textarea:focus{outline:none;border-color:var(--orange);box-shadow:0 0 0 3px rgba(255,144,28,0.2)}
+.cta-form textarea{resize:vertical;min-height:80px}
+.cta-form .btn-primary{width:100%;justify-content:center}
+.btn-primary{display:inline-flex;align-items:center;gap:0.6rem;background:var(--green-wa);color:#fff;font-family:var(--font-body);font-weight:700;font-size:clamp(0.95rem,0.9rem + 0.25vw,1.1rem);padding:0.85rem 2rem;border-radius:10px;min-height:48px;border:none;cursor:pointer;transition:background 0.2s ease,transform 0.15s ease}
+.btn-primary:hover{background:var(--green-wa-hover);transform:translateY(-2px)}
+.btn-primary svg{width:20px;height:20px;flex-shrink:0}
+
+/* ── NEW FOOTER ── */
+.site-footer{background:#063d6e;color:rgba(255,255,255,0.85);font-family:var(--font-body);font-size:0.9rem}
+.footer-main{padding:clamp(1.5rem,3vw,2.5rem) clamp(1rem,3vw,2rem)}
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:2.5rem}
+@media(min-width:768px){.footer-inner{grid-template-columns:1fr 1fr 1.2fr;gap:3rem}}
+.footer-col h4{font-family:var(--font-heading);font-weight:400;text-transform:uppercase;font-size:1rem;color:var(--orange);margin-bottom:12px;letter-spacing:0.04em}
+.footer-col p{margin-bottom:6px;line-height:1.5}
+.footer-wa-btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;font-weight:600;font-size:0.85rem;padding:10px 20px;border-radius:8px;margin-top:16px;transition:background 0.2s}
+.footer-wa-btn:hover{background:#e07a10}
+.footer-map{margin:12px 0}
+.footer-map-btn{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.9);color:#063d6e;font-weight:600;font-size:0.85rem;padding:10px 20px;border-radius:8px;transition:background 0.2s}
+.footer-map-btn:hover{background:#fff}
+.footer-info{background:rgba(0,0,0,0.15);padding:12px clamp(1rem,3vw,2rem);text-align:center;font-size:0.75rem;line-height:1.5;color:rgba(255,255,255,0.6)}
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:10px clamp(1rem,3vw,2rem);border-top:1px solid rgba(255,255,255,0.1);font-size:0.8rem;color:rgba(255,255,255,0.5);max-width:1200px;margin:0 auto}
+.footer-legal a{color:rgba(255,255,255,0.5);transition:color 0.2s}
+.footer-legal a:hover{color:#fff}
+
+/* ===== BLOCOS EXTRA (STATS · SIM · ECON · DUELO · VÍDEO) — adaptados à V6 ===== */
+.sec-pad{padding:clamp(3rem,6vw,5.5rem) 0}
+.center{text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-heading);font-weight:400;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.center .eyebrow::after{content:"";width:28px;height:2px;background:currentColor}
+.lead{font-size:1.1rem;color:var(--text-muted);max-width:680px}
+.center .lead{margin-left:auto;margin-right:auto}
+
+/* STATS */
+.stats{background:linear-gradient(135deg,var(--blue-deep),var(--blue));color:#fff}
+.stats .container{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;padding:clamp(2.5rem,5vw,4rem) clamp(1rem,3vw,2.5rem)}
+.stat .num{font-family:var(--font-heading);font-size:clamp(2.2rem,4.5vw,3.2rem);font-weight:400;line-height:1;color:var(--orange)}
+.stat p{color:rgba(255,255,255,0.75);font-size:.95rem;margin-top:8px}
+@media(max-width:720px){.stats .container{grid-template-columns:repeat(2,1fr);gap:34px 20px}}
+
+/* SIMULAÇÃO */
+.sim{position:relative;height:520px;max-width:1000px;margin:44px auto 0;background:radial-gradient(130% 100% at 50% 40%,#fff 40%,#eef5f9 75%,#dfeaf1);border-radius:20px;overflow:hidden;box-shadow:0 30px 70px rgba(8,91,167,.20)}
+.sim .heat{position:absolute;top:0;bottom:0;left:0;width:42%;background:linear-gradient(90deg,rgba(255,144,28,.18),transparent)}
+.sim .cold{position:absolute;top:0;bottom:0;right:0;width:42%;background:linear-gradient(270deg,rgba(16,139,209,.20),transparent)}
+.sim .prod{position:absolute;bottom:7%;left:50%;transform:translateX(-50%);height:80%;z-index:6;mix-blend-mode:multiply}
+.sim .zone{position:absolute;top:22px;padding:9px 16px;border-radius:22px;font-family:var(--font-heading);font-weight:400;color:#fff;font-size:.85rem;letter-spacing:.03em;z-index:9;display:flex;align-items:center;gap:8px}
+.sim .zone svg{width:18px;height:18px}
+.sim .zhot{left:24px;background:linear-gradient(135deg,#ff901c,#e0670a)}
+.sim .zcool{right:24px;background:linear-gradient(135deg,var(--blue-light),var(--blue))}
+.sim .temp{position:absolute;bottom:22px;padding:8px 14px;border-radius:12px;font-family:var(--font-heading);font-weight:400;font-size:1.3rem;z-index:9;color:#fff}
+.sim .thot{left:24px;background:rgba(224,103,10,.94)}
+.sim .tcool{right:24px;background:rgba(8,91,167,.94)}
+.sim .s{position:absolute;height:5px;border-radius:5px;z-index:5}
+.sim .s.hot{background:linear-gradient(90deg,transparent,#ff901c);box-shadow:0 0 10px rgba(255,144,28,.5)}
+.sim .s.cool{background:linear-gradient(90deg,var(--blue-light),transparent);box-shadow:0 0 10px rgba(16,139,209,.55)}
+@keyframes hin{0%{opacity:0;transform:translateX(0) scaleX(.5)}20%{opacity:1}100%{opacity:0;transform:translateX(230px) scaleX(1)}}
+@keyframes cout{0%{opacity:0;transform:translateX(0) scaleX(.5)}20%{opacity:1}100%{opacity:0;transform:translateX(300px) scaleX(1)}}
+@media(max-width:640px){.sim{height:420px}.sim .prod{height:70%}.sim .zone{font-size:.7rem;padding:7px 11px}.sim .temp{font-size:1rem}}
+
+/* ECONOMIA GAUGE */
+.econ{background:var(--blue-deep);color:#fff;overflow:hidden}
+.econ .container{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,4vw,3.5rem);align-items:center}
+.econ h2{color:#fff}
+.econ .lead{color:rgba(255,255,255,.8)}
+.econ ul{list-style:none;margin-top:26px;display:grid;gap:16px}
+.econ li{display:flex;gap:13px;align-items:flex-start;font-size:1.02rem;color:#eaf1f7}
+.econ li svg{width:22px;height:22px;color:var(--orange);flex-shrink:0;margin-top:2px}
+.gauge{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:20px;padding:clamp(1.5rem,3vw,2.4rem)}
+.gauge .row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;text-align:center}
+.gauge .card{background:#fff;color:var(--text);border-radius:14px;padding:26px 14px}
+.gauge .card.warm{background:#fff5ec}
+.gauge .card .big{font-family:var(--font-heading);font-size:2rem;font-weight:400;line-height:1}
+.gauge .cool .big{color:var(--green-wa)}
+.gauge .warm .big{color:var(--orange)}
+.gauge .card small{color:var(--text-muted);font-weight:600;font-size:.8rem}
+.gauge .x{font-family:var(--font-heading);font-weight:400;color:var(--orange)}
+.barwrap{margin-top:26px}
+.barwrap .lab{display:flex;justify-content:space-between;font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:7px;font-weight:600}
+.bar{height:12px;border-radius:99px;background:rgba(255,255,255,.14);overflow:hidden;margin-bottom:16px}
+.bar span{display:block;height:100%;border-radius:99px;width:0;transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+.bar.a span{background:linear-gradient(90deg,var(--green-wa),#7fe0b8)}
+.bar.b span{background:linear-gradient(90deg,var(--orange),#ffb35c)}
+.reveal.visible .bar.a span{width:10%}
+.reveal.visible .bar.b span{width:100%}
+@media(max-width:900px){.econ .container{grid-template-columns:1fr;gap:34px}}
+
+/* DUELO */
+.duel{display:grid;grid-template-columns:1fr auto 1fr;margin-top:44px;align-items:stretch}
+.duel .side{border-radius:18px;overflow:hidden;box-shadow:0 18px 44px rgba(8,91,167,.14)}
+.duel .win{background:linear-gradient(180deg,#149063,#0c6244);color:#fff}
+.duel .lose{background:linear-gradient(180deg,#9a3323,#6d2016);color:#fff}
+.duel .head{padding:16px 22px;font-family:var(--font-heading);font-weight:400;font-size:1.05rem;letter-spacing:.03em;display:flex;align-items:center;gap:9px}
+.duel .kick{padding:18px 22px 2px;font-family:var(--font-heading);font-weight:400;font-size:1.2rem;line-height:1.15}
+.duel .body{padding:8px 22px 20px;text-align:left}
+.duel .li{display:flex;gap:10px;align-items:flex-start;padding:9px 0;font-weight:600;font-size:.95rem;border-bottom:1px solid rgba(255,255,255,.15)}
+.duel .li:last-child{border-bottom:0}
+.duel .ic{font-weight:900;width:18px;flex-shrink:0}
+.duel .win .ic{color:#9dffd8}
+.duel .lose .ic{color:#ffb3a6}
+.duel .mid{display:flex;align-items:center;justify-content:center;padding:0 14px}
+.duel .vs{width:56px;height:56px;border-radius:50%;background:var(--blue-deep);border:3px solid var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-weight:400;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+.duel-foot{margin-top:18px;background:linear-gradient(135deg,var(--blue),var(--blue-light));color:#fff;border-radius:14px;padding:18px;text-align:center;font-family:var(--font-heading);font-weight:400;font-size:clamp(1.05rem,2.4vw,1.4rem);letter-spacing:.02em}
+@media(max-width:800px){.duel{grid-template-columns:1fr;gap:14px}.duel .mid{padding:6px 0}.duel .vs{margin:0 auto}}
+/* imagem lateral em fade dentro de cada card do duelo */
+.duel .side{position:relative}
+.duel .fade-img{position:absolute;top:0;bottom:0;width:52%;background-size:cover;background-position:center;z-index:0;pointer-events:none}
+.duel .win .fade-img{left:0;-webkit-mask-image:linear-gradient(90deg,#000 0%,#000 30%,transparent 100%);mask-image:linear-gradient(90deg,#000 0%,#000 30%,transparent 100%)}
+.duel .lose .fade-img{right:0;-webkit-mask-image:linear-gradient(270deg,#000 0%,#000 30%,transparent 100%);mask-image:linear-gradient(270deg,#000 0%,#000 30%,transparent 100%)}
+.duel .head,.duel .kick,.duel .body{position:relative;z-index:1;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.duel .win .head,.duel .win .kick,.duel .win .body{padding-left:46%}
+.duel .lose .head,.duel .lose .kick,.duel .lose .body{padding-right:46%}
+
+/* VÍDEO */
+.video-sec{background:var(--bg-alt)}
+.video-frame{position:relative;max-width:920px;margin:40px auto 0;aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(8,91,167,.20);background:#04121e}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+
+/* CTA extra + animação de destaque (pulso) */
+.cta-block-wrap{margin-top:clamp(24px,4vw,40px);text-align:center}
+@keyframes ctaPulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}
+  70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+}
+.cta-pulse{animation:ctaPulse 2.2s cubic-bezier(.4,0,.6,1) infinite}
+</style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+<!-- End GA4 -->
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+(i);y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","XXXXXXX");</script>
+<!-- End Clarity -->
+
+<!-- Google Search Console verification -->
+<meta name="google-site-verification" content="XXXXXXX">
+</head>
+<body>
+
+<!-- Ícones SVG reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s5 4 5 9a5 5 0 0 1-10 0c0-1 .5-2 1-3 .5 2 2 2 2 2-1-3 2-8 2-8z"/></symbol>
+  <symbol id="i-snow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+</svg>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="Chiller Peças - Página Inicial">
+      <img src="Manual de Marca/logo branca Header (barra fixa topo).svg" alt="Chiller Peças" style="height:36px;width:auto;">
+    </a>
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#economia">Economia</a>
+      <a href="#modelos">Modelos</a>
+      <a href="#aplicacoes">Aplicações</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta-wrap">
+      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa" target="_blank" rel="noopener" aria-label="Solicitar orçamento pelo WhatsApp" data-cta="header-whatsapp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Alugar Agora
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+  <a href="#diferenciais">Diferenciais</a>
+  <a href="#economia">Economia</a>
+  <a href="#modelos">Modelos</a>
+  <a href="#aplicacoes">Aplicações</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#faq">FAQ</a>
+  <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" target="_blank" rel="noopener" style="color:var(--green-wa)" data-cta="other-whatsapp">WhatsApp</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Climatizadores Chiller Peças">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badges">
+        <span class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          Motor WEG
+        </span>
+        <span class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          INMETRO
+        </span>
+        <span class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 0V3h6v4m0 0v1a3 3 0 006 0V7"/></svg>
+          Sem Instalação
+        </span>
+      </div>
+      <h1>Seu evento tem data marcada. O calor, não.</h1>
+      <p class="hero-subtitle">A gente manda entregar pronto para usar, sem instalação. Você sente o ar fresco em minutos e não gasta um real com equipamento parado no resto do ano.</p>
+      <div class="hero-cta-group">
+        <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa" target="_blank" rel="noopener" data-cta="hero-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero alugar para o meu evento
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar" role="complementary" aria-label="Selos de confiança">
+  <div class="trust-bar-inner container">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      Motor WEG
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Certificação INMETRO
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 0V3h6v4m0 0v1a3 3 0 006 0V7"/></svg>
+      100% Nacional
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Sem Instalação
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+      Assistência Nacional
+    </div>
+  </div>
+</div>
+
+<!-- ===== STATS (números que crescem) ===== -->
+<section class="stats">
+  <div class="container reveal">
+    <div class="stat"><div class="num" data-stat="90" data-suffix="%">0%</div><p>de economia de energia</p></div>
+    <div class="stat"><div class="num" data-stat="200" data-suffix="W">0W</div><p>de consumo, o de uma lâmpada</p></div>
+    <div class="stat"><div class="num" data-stat="24" data-suffix="h">0h</div><p>para receber no seu evento</p></div>
+    <div class="stat"><div class="num" data-stat="0" data-text="R$0">R$0</div><p>investido em equipamento</p></div>
+  </div>
+</section>
+
+<!-- ===== DIFERENCIAIS (2000 empresas hero from LP4) ===== -->
+<section class="diferenciais-hero" id="diferenciais" aria-label="Diferenciais">
+<div class="container">
+<div class="diff-hero-top reveal" style="display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:center;margin-bottom:clamp(2rem,4vw,3rem);">
+<div style="display:flex;flex-direction:column;gap:1rem;">
+<h2 class="hero-headline" style="margin:0;">Mais de <span data-count="2000" style="color:#ff901c">0</span> eventos, obras e igrejas já resolveram o calor sem comprar nada.</h2>
+<p class="hero-sub" style="margin:0;">De casamento a canteiro de obra, ninguém precisou imobilizar dinheiro em equipamento. A gente manda entregar pronto para usar, sem instalação nem fixação, com motor WEG e certificação INMETRO garantindo o resultado.</p>
+<a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-primary" data-cta="diferenciais-whatsapp" target="_blank" rel="noopener" style="align-self:flex-start;">
+<svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+Alugar para Evento
+</a>
+</div>
+<img src="climatizadores-fotos/800x400.svg" alt="Climatizadores Chiller Peças em ambiente de restaurante" loading="lazy" style="width:100%;height:auto;border-radius:12px;">
+</div>
+
+<div class="install-strip" role="list" aria-label="Instalações realizadas">
+<div class="install-strip-track">
+<figure class="install-card" role="listitem">
+<img src="climatizadores-fotos/1.svg" alt="Climatizador em salão de igreja" loading="lazy" width="260" height="170">
+<figcaption>Igreja Batista Central, Goiânia/GO</figcaption>
+</figure>
+<figure class="install-card" role="listitem">
+<img src="climatizadores-fotos/2.svg" alt="Climatizador em oficina mecânica" loading="lazy" width="260" height="170">
+<figcaption>Auto Center Silva, Sorocaba/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem">
+<img src="climatizadores-fotos/3.svg" alt="Climatizador Duplo em feira de exposição" loading="lazy" width="260" height="170">
+<figcaption>Feira Expo Comercial, São Paulo/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem">
+<img src="climatizadores-fotos/4.svg" alt="Climatizador Duplo em galpão logístico" loading="lazy" width="260" height="170">
+<figcaption>Centro de Distribuição, Ribeirão Preto/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem">
+<img src="climatizadores-fotos/casamento.png" alt="Climatizador em cerimônia de casamento na igreja" loading="lazy" width="260" height="170">
+<figcaption>Cerimônia de casamento, São Paulo/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem">
+<img src="climatizadores-fotos/6.svg" alt="Climatizador em showroom comercial" loading="lazy" width="260" height="170">
+<figcaption>Showroom Chiller Peças, São Paulo/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem">
+<img src="climatizadores-fotos/recepção corporativa.png" alt="Climatizador em recepção corporativa" loading="lazy" width="260" height="170">
+<figcaption>Recepção corporativa, São Paulo/SP</figcaption>
+</figure>
+<!-- duplicados para loop infinito -->
+<figure class="install-card" role="listitem" aria-hidden="true">
+<img src="climatizadores-fotos/1.svg" alt="" loading="lazy" width="260" height="170">
+<figcaption>Igreja Batista Central, Goiânia/GO</figcaption>
+</figure>
+<figure class="install-card" role="listitem" aria-hidden="true">
+<img src="climatizadores-fotos/2.svg" alt="" loading="lazy" width="260" height="170">
+<figcaption>Auto Center Silva, Sorocaba/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem" aria-hidden="true">
+<img src="climatizadores-fotos/3.svg" alt="" loading="lazy" width="260" height="170">
+<figcaption>Feira Expo Comercial, São Paulo/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem" aria-hidden="true">
+<img src="climatizadores-fotos/4.svg" alt="" loading="lazy" width="260" height="170">
+<figcaption>Centro de Distribuição, Ribeirão Preto/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem" aria-hidden="true">
+<img src="climatizadores-fotos/casamento.png" alt="" loading="lazy" width="260" height="170">
+<figcaption>Cerimônia de casamento, São Paulo/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem" aria-hidden="true">
+<img src="climatizadores-fotos/6.svg" alt="" loading="lazy" width="260" height="170">
+<figcaption>Showroom Chiller Peças, São Paulo/SP</figcaption>
+</figure>
+<figure class="install-card" role="listitem" aria-hidden="true">
+<img src="climatizadores-fotos/recepção corporativa.png" alt="" loading="lazy" width="260" height="170">
+<figcaption>Recepção corporativa, São Paulo/SP</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== SIMULAÇÃO DE AR ===== -->
+<section class="sec-pad" style="background:var(--bg-alt)">
+  <div class="container center">
+    <span class="eyebrow reveal">Veja o ar circulando</span>
+    <h2 class="reveal">Puxa o ar quente, devolve o ar fresco</h2>
+    <p class="lead reveal">O climatizador suga o ar quente e seco, resfria na água e devolve um ar fresco e limpo pelas aletas. Simples, natural e sem gás. Funciona assim por 1 dia de evento ou 1 mês de obra, sem perder eficiência.</p>
+    <div class="sim reveal">
+      <div class="heat"></div>
+      <div class="cold"></div>
+      <div class="zone zhot"><svg><use href="#i-fire"/></svg> AR QUENTE ENTRA</div>
+      <div class="zone zcool"><svg><use href="#i-snow"/></svg> AR FRESCO SAI</div>
+      <div class="temp thot">38°C</div>
+      <div class="temp tcool">24°C</div>
+      <img class="prod" src="climatizadores-fotos/70L-06.png" alt="Climatizador evaporativo Chiller Peças puxando ar quente e devolvendo ar fresco">
+    </div>
+  </div>
+</section>
+
+<!-- ===== ECONOMIA (gauge comparativo) ===== -->
+<section class="sec-pad econ" id="economia">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow" style="color:var(--orange)">Por que alugar</span>
+      <h2>Ar fresco no dia certo, sem imobilizar seu caixa</h2>
+      <p class="lead">Comprar um climatizador para usar num evento ou num pico de calor é dinheiro parado o ano inteiro, mais o custo de guardar e manter o equipamento. Na locação, você paga só pelos dias que usa: a gente manda entregar pronto para usar, sem instalação nem fixação.</p>
+      <ul>
+        <li><svg><use href="#i-check"/></svg> Zero investimento: sem comprar, sem estoque parado, sem depreciação</li>
+        <li><svg><use href="#i-check"/></svg> Mandamos entregar pronto para usar, sem instalação nem fixação</li>
+        <li><svg><use href="#i-check"/></svg> Motor WEG e certificação INMETRO em todo equipamento que sai daqui</li>
+        <li><svg><use href="#i-check"/></svg> Consumo de 200W: liga na tomada comum, sem obra nem instalação elétrica</li>
+      </ul>
+    </div>
+    <div class="gauge reveal">
+      <div class="row">
+        <div class="card cool"><div class="big">~200W</div><small>Climatizador</small></div>
+        <div class="x">VS</div>
+        <div class="card warm"><div class="big">~2.000W</div><small>Ar-condicionado</small></div>
+      </div>
+      <div class="barwrap">
+        <div class="lab"><span>Climatizador evaporativo</span><span>baixíssimo</span></div>
+        <div class="bar a"><span></span></div>
+        <div class="lab"><span>Ar-condicionado equivalente</span><span>alto</span></div>
+        <div class="bar b"><span></span></div>
+      </div>
+      <p style="text-align:center;color:rgba(255,255,255,.8);font-size:.9rem">Zero capital imobilizado: você usa o climatizador só quando precisa, e devolve quando o evento ou a obra terminam.</p>
+    </div>
+    <div class="cta-block-wrap reveal" style="grid-column:1/-1">
+      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-primary cta-pulse" data-cta="economia-whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Alugar sem burocracia
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MODELOS (cards from LP4) ===== -->
+<section class="diff-section models-section" id="modelos">
+<div class="container">
+<h2 class="diff-title" style="text-align:center;max-width:none;margin:0 auto 10px;font-size:clamp(19px,4.6vw,44px)">Qual o tamanho do seu evento?</h2>
+<p style="text-align:center;color:var(--text-muted);font-size:0.95rem;margin:0 auto clamp(28px,4vw,48px)">Temos o climatizador ideal para o seu período de locação</p>
+
+<div class="models-grid">
+<article class="model-card reveal">
+<img src="climatizadores-fotos/45L-04.jpg" alt="Climatizador Evaporativo Portátil Chiller Peças 45 Litros" loading="lazy" width="200" height="200">
+<h3 class="model-name">Climatizador 45L</h3>
+<p class="model-cap">Ambientes de até 40m²</p>
+<ul class="model-specs">
+<li><span>Reservatório</span><strong>45 litros</strong></li>
+<li><span>Vazão de ar</span><strong>3.500 m³/h</strong></li>
+<li><span>Potência</span><strong>160W</strong></li>
+<li><span>Motor</span><strong>WEG</strong></li>
+</ul>
+<a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20alugar%20o%20Climatizador%2045L" class="cta-model" data-cta="modelo-45l-whatsapp" target="_blank" rel="noopener">Alugar este modelo</a>
+</article>
+<article class="model-card reveal">
+<span class="model-badge">Mais alugado</span>
+<img src="climatizadores-fotos/70L-03.jpg" alt="Climatizador Evaporativo Portátil Chiller Peças 70 Litros" loading="lazy" width="200" height="200">
+<h3 class="model-name">Climatizador 70L</h3>
+<p class="model-cap">Ambientes de até 70m²</p>
+<ul class="model-specs">
+<li><span>Reservatório</span><strong>70 litros</strong></li>
+<li><span>Vazão de ar</span><strong>7.000 m³/h</strong></li>
+<li><span>Potência</span><strong>200W</strong></li>
+<li><span>Motor</span><strong>WEG</strong></li>
+</ul>
+<a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20alugar%20o%20Climatizador%2070L" class="cta-model" data-cta="modelo-70l-whatsapp" target="_blank" rel="noopener">Quero alugar este</a>
+</article>
+<article class="model-card reveal">
+<img src="climatizadores-fotos/100L-04.jpg" alt="Climatizador Evaporativo Portátil Chiller Peças Duplo" loading="lazy" width="200" height="200">
+<h3 class="model-name">Climatizador Duplo</h3>
+<p class="model-cap">Galpões acima de 150m²</p>
+<ul class="model-specs">
+<li><span>Reservatório</span><strong>150 litros</strong></li>
+<li><span>Vazão de ar</span><strong>20.000 m³/h</strong></li>
+<li><span>Potência</span><strong>450W</strong></li>
+<li><span>Motor</span><strong>2x WEG</strong></li>
+</ul>
+<a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20alugar%20o%20Climatizador%20Duplo" class="cta-model" data-cta="modelo-duplo-whatsapp" target="_blank" rel="noopener">Alugar o Duplo agora</a>
+</article>
+</div>
+</div>
+</section>
+
+<!-- ===== COMPARAÇÃO (table from LP3) ===== -->
+<section class="comparison" id="comparar" aria-label="Tabela comparativa de modelos">
+  <div class="comparison-inner">
+    <h2>Compare os modelos disponíveis para locação</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Especificação</th>
+            <th>45L</th>
+            <th>70L <span class="badge-popular">Mais alugado</span></th>
+            <th>Duplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reservatório</td>
+            <td>45 litros</td>
+            <td>70 litros</td>
+            <td>150 litros</td>
+          </tr>
+          <tr>
+            <td>Vazão de ar</td>
+            <td>3.500 m³/h</td>
+            <td>5.500 m³/h</td>
+            <td>15.000 m³/h</td>
+          </tr>
+          <tr>
+            <td>Área recomendada</td>
+            <td>Até 35 m²</td>
+            <td>40 a 60 m²</td>
+            <td>80 a 150 m²</td>
+          </tr>
+          <tr>
+            <td>Consumo</td>
+            <td>200W</td>
+            <td>230W</td>
+            <td>560W</td>
+          </tr>
+          <tr>
+            <td>Ventiladores</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Velocidades</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Voltagem</td>
+            <td>110V / 220V</td>
+            <td>220V</td>
+            <td>220V</td>
+          </tr>
+          <tr>
+            <td>Rodízios</td>
+            <td>Sim</td>
+            <td>Sim</td>
+            <td>Sim</td>
+          </tr>
+          <tr>
+            <td>Ideal para</td>
+            <td>Residências, lojas pequenas</td>
+            <td>Restaurantes, escritórios, igrejas</td>
+            <td>Indústrias, gráficas, galpões</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Versão mobile em cards (sem scroll lateral) -->
+    <div class="compare-mobile">
+      <div class="compare-card">
+        <h3>45L</h3>
+        <ul>
+          <li><span>Reservatório</span><strong>45 litros</strong></li>
+          <li><span>Vazão de ar</span><strong>3.500 m³/h</strong></li>
+          <li><span>Área recomendada</span><strong>Até 35 m²</strong></li>
+          <li><span>Consumo</span><strong>200W</strong></li>
+          <li><span>Ventiladores</span><strong>1</strong></li>
+          <li><span>Velocidades</span><strong>3</strong></li>
+          <li><span>Voltagem</span><strong>110V / 220V</strong></li>
+          <li><span>Rodízios</span><strong>Sim</strong></li>
+          <li><span>Ideal para</span><strong>Residências, lojas pequenas</strong></li>
+        </ul>
+      </div>
+      <div class="compare-card">
+        <h3>70L <span class="badge-popular">Mais alugado</span></h3>
+        <ul>
+          <li><span>Reservatório</span><strong>70 litros</strong></li>
+          <li><span>Vazão de ar</span><strong>5.500 m³/h</strong></li>
+          <li><span>Área recomendada</span><strong>40 a 60 m²</strong></li>
+          <li><span>Consumo</span><strong>230W</strong></li>
+          <li><span>Ventiladores</span><strong>1</strong></li>
+          <li><span>Velocidades</span><strong>3</strong></li>
+          <li><span>Voltagem</span><strong>220V</strong></li>
+          <li><span>Rodízios</span><strong>Sim</strong></li>
+          <li><span>Ideal para</span><strong>Restaurantes, escritórios, igrejas</strong></li>
+        </ul>
+      </div>
+      <div class="compare-card">
+        <h3>Duplo</h3>
+        <ul>
+          <li><span>Reservatório</span><strong>150 litros</strong></li>
+          <li><span>Vazão de ar</span><strong>15.000 m³/h</strong></li>
+          <li><span>Área recomendada</span><strong>80 a 150 m²</strong></li>
+          <li><span>Consumo</span><strong>560W</strong></li>
+          <li><span>Ventiladores</span><strong>2</strong></li>
+          <li><span>Velocidades</span><strong>3</strong></li>
+          <li><span>Voltagem</span><strong>220V</strong></li>
+          <li><span>Rodízios</span><strong>Sim</strong></li>
+          <li><span>Ideal para</span><strong>Indústrias, gráficas, galpões</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-block-wrap reveal">
+      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20ajuda%20para%20escolher%20o%20climatizador%20ideal%20para%20locação" class="cta-wa cta-pulse" data-cta="comparacao-whatsapp" target="_blank" rel="noopener" style="justify-content:center">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escolher com ajuda de um especialista
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DUELO (Climatizador x Ar-condicionado) ===== -->
+<section class="sec-pad" style="background:var(--bg-alt)">
+  <div class="container center">
+    <span class="eyebrow reveal">Compare antes de decidir</span>
+    <h2 class="reveal">Alugar um climatizador x instalar um ar-condicionado</h2>
+    <p class="lead reveal">Você precisa de ar fresco por um período, não de um aparelho parado no seu patrimônio depois que o evento, a obra ou a temporada acabar. Veja lado a lado por que alugar ganha.</p>
+    <div class="duel reveal">
+      <div class="side win">
+        <div class="fade-img" style="background-image:url('climatizadores-fotos/carr05.png')" aria-hidden="true"></div>
+        <div class="head"><span class="ic">✓</span> CLIMATIZADOR ALUGADO</div>
+        <div class="kick">Chega, refresca e some quando você não precisa mais.</div>
+        <div class="body">
+          <div class="li"><span class="ic">✓</span> Consome ~200W, o mesmo que uma lâmpada: você paga a conta de luz do dia de uso, não do ano inteiro</div>
+          <div class="li"><span class="ic">✓</span> Você paga centavos por hora e zero quando o climatizador não está com você</div>
+          <div class="li"><span class="ic">✓</span> Chega pronto, sem obra e sem técnico: sua necessidade é de agora, não de sempre</div>
+          <div class="li"><span class="ic">✓</span> Funciona com portas e portões abertos, do jeito que seu evento, obra ou galpão realmente é</div>
+        </div>
+      </div>
+      <div class="mid"><div class="vs">VS</div></div>
+      <div class="side lose">
+        <div class="fade-img" style="background-image:url('climatizadores-fotos/instalador-de-ar-condicionado.webp')" aria-hidden="true"></div>
+        <div class="head"><span class="ic">✕</span> COMPRAR E INSTALAR UM FIXO</div>
+        <div class="kick">Vira patrimônio parado quando a necessidade passa.</div>
+        <div class="body">
+          <div class="li"><span class="ic">✕</span> Consome perto de 2.000W, rodando os dias que você nem vai mais precisar dele</div>
+          <div class="li"><span class="ic">✕</span> Caro ligado o dia todo, mesmo depois que o motivo que te fez instalar já passou</div>
+          <div class="li"><span class="ic">✕</span> Instalação, furos e transtorno, para um uso que dura semanas, não anos</div>
+          <div class="li"><span class="ic">✕</span> Só funciona em ambiente fechado</div>
+        </div>
+      </div>
+    </div>
+    <div class="duel-foot reveal">Até 90% mais barato na conta de luz, e você só paga pelos dias que realmente precisa.</div>
+    <div class="cta-block-wrap reveal">
+      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa cta-pulse" data-cta="duelo-whatsapp" target="_blank" rel="noopener" style="justify-content:center">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Alugar meu climatizador agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APLICAÇÕES (from LP5) ===== -->
+<section class="aplicacoes-section" id="aplicacoes">
+  <div class="container">
+    <div class="section-label reveal">Aplicações</div>
+    <h2 class="reveal">Perfeito para quando o calor tem hora para acabar</h2>
+    <p class="aplicacoes-intro reveal">Um evento de fim de semana, uma feira de três dias, um verão de produção puxada. Sempre que a necessidade é por um período, a locação é a saída inteligente. Veja qual modelo está disponível para o seu momento.</p>
+
+    <div class="aplicacoes-grid">
+      <div class="aplicacao-card reveal">
+        <img src="climatizadores-fotos/carr02.png" alt="Climatizador evaporativo Chiller Peças em oficina mecânica" loading="lazy" width="600" height="400">
+        <div class="aplicacao-overlay">
+          <span class="aplicacao-tag">Dia de feirão</span>
+          <span class="aplicacao-name">Oficinas mecânicas</span>
+          <span class="aplicacao-spec">Disponível para locação: 70L</span>
+        </div>
+      </div>
+      <div class="aplicacao-card reveal">
+        <img src="climatizadores-fotos/45L-02.jpg" alt="Climatizador evaporativo Chiller Peças 45L em restaurante" loading="lazy" width="600" height="400">
+        <div class="aplicacao-overlay">
+          <span class="aplicacao-tag">Noite especial</span>
+          <span class="aplicacao-name">Restaurantes e bares</span>
+          <span class="aplicacao-spec">Disponível para locação: 45L</span>
+        </div>
+      </div>
+      <div class="aplicacao-card reveal">
+        <img src="climatizadores-fotos/escritorio.png" alt="Climatizador evaporativo Chiller Peças em escritório aberto" loading="lazy" width="600" height="400">
+        <div class="aplicacao-overlay">
+          <span class="aplicacao-tag">Evento pontual</span>
+          <span class="aplicacao-name">Escritórios e coworkings</span>
+          <span class="aplicacao-spec">Disponível para locação: 45L</span>
+        </div>
+      </div>
+      <div class="aplicacao-card reveal">
+        <img src="climatizadores-fotos/igreja.png" alt="Climatizador evaporativo Chiller Peças em igreja" loading="lazy" width="600" height="400">
+        <div class="aplicacao-overlay">
+          <span class="aplicacao-tag">Celebração especial</span>
+          <span class="aplicacao-name">Igrejas e celebrações</span>
+          <span class="aplicacao-spec">Disponível para locação: 70L</span>
+        </div>
+      </div>
+      <div class="aplicacao-card reveal">
+        <img src="climatizadores-fotos/carr03.png" alt="Climatizador evaporativo Chiller Peças Duplo em feira de exposição" loading="lazy" width="600" height="400">
+        <div class="aplicacao-overlay">
+          <span class="aplicacao-tag">Três dias de feira</span>
+          <span class="aplicacao-name">Feiras e exposições</span>
+          <span class="aplicacao-spec">Disponível para locação: Duplo</span>
+        </div>
+      </div>
+      <div class="aplicacao-card reveal">
+        <img src="climatizadores-fotos/industrial.png" alt="Climatizador evaporativo Chiller Peças Duplo em fábrica" loading="lazy" width="600" height="400">
+        <div class="aplicacao-overlay">
+          <span class="aplicacao-tag">Pico da temporada</span>
+          <span class="aplicacao-name">Fábricas</span>
+          <span class="aplicacao-spec">Disponível para locação: Duplo</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-block-wrap reveal">
+      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa cta-pulse" data-cta="aplicacoes-whatsapp" target="_blank" rel="noopener" style="justify-content:center">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Reservar o modelo certo para o meu período
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROVA SOCIAL (from LP5) ===== -->
+<section class="social-section" id="depoimentos">
+  <div class="container">
+    <div class="section-label section-label-light reveal">Depoimentos</div>
+    <h2 class="reveal">Quem alugou, aprovou.</h2>
+
+    <div class="social-grid">
+      <div class="social-card reveal">
+        <div class="social-stars" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="social-quote">"Aluguei para a área externa do casamento na chácara. Recebi o equipamento pronto para usar antes do grande dia, sem precisar de nenhuma instalação. Os convidados dançaram a noite toda e nem sentiram o calorão: foi o comentário mais repetido da festa."</p>
+        <div class="social-author">Roberto Mendes</div>
+        <div class="social-role">Noivo, casamento em chácara em Campinas/SP</div>
+      </div>
+      <div class="social-card reveal">
+        <div class="social-stars" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="social-quote">"Nossa feira de artesanato durou 3 dias no pavilhão e alugar saiu muito mais barato que comprar equipamento para usar uma vez por ano. Chegou no horário combinado, funcionou os três dias sem parar um minuto, e no fim eu só liguei para marcar a retirada."</p>
+        <div class="social-author">Ana Paula Vieira</div>
+        <div class="social-role">Organizadora de eventos em Ribeirão Preto/SP</div>
+      </div>
+      <div class="social-card reveal">
+        <div class="social-stars" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="social-quote">"No verão a produção não parava de reclamar do calor dentro do galpão. Aluguei quatro unidades pelos meses mais quentes, com motor WEG e revisão prévia, e nenhuma parou um minuto sequer. Resolvi o problema sem imobilizar dinheiro em equipamento parado no resto do ano."</p>
+        <div class="social-author">Carlos Eduardo</div>
+        <div class="social-role">Coordenador de operações, indústria em Goiânia/GO</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VÍDEO INSTITUCIONAL ===== -->
+<section class="sec-pad video-sec">
+  <div class="container center">
+    <span class="eyebrow reveal">Conheça quem vai climatizar seu evento</span>
+    <h2 class="reveal">Quem é a Chiller Peças</h2>
+    <p class="lead reveal">Assista ao vídeo institucional e conheça a estrutura que garante entrega rápida, equipamento revisado e suporte durante todo o período da sua locação.</p>
+    <div class="video-frame reveal">
+      <iframe src="https://www.youtube.com/embed/YOQBvnkWpws?rel=0" title="Chiller Peças: Somos a agilidade por trás da refrigeração!" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA FINAL (from LP5) ===== -->
+<section class="cta-section" id="contato">
+  <div class="container">
+    <div class="cta-layout">
+      <div class="cta-whatsapp-block reveal">
+        <div class="cta-whatsapp-intro">
+          <div class="section-label section-label-light">Contato</div>
+          <h2>Tem data marcada? Garanta o clima antes que o calor chegue.</h2>
+          <p class="cta-subtitle">Diga a data, o tamanho do espaço e por quantos dias você precisa. A gente monta o orçamento de locação na hora, sem custo e sem compromisso.</p>
+          <p>Me chame no WhatsApp com a data do evento e o tamanho do ambiente. Em minutos você recebe o modelo indicado, o valor da diária e a disponibilidade para o seu período.</p>
+        </div>
+        <div class="cta-whatsapp-action">
+          <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="btn-primary" target="_blank" rel="noopener noreferrer" style="width:fit-content" data-cta="cta-final-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Garantir minha data de locação
+          </a>
+          <p class="cta-helper">Resposta rápida em horário comercial. Você fala com quem organiza a sua locação, não com robô.</p>
+        </div>
+      </div>
+      <form class="cta-form reveal" id="contact-form">
+        <label for="form-nome">Nome</label>
+        <input type="text" id="form-nome" name="nome" placeholder="Seu nome completo" required>
+        <label for="form-telefone">Telefone / WhatsApp</label>
+        <input type="tel" id="form-telefone" name="telefone" placeholder="(00) 00000-0000" required>
+        <label for="form-tipo">Tipo de uso</label>
+        <select id="form-tipo" name="tipo_uso" required>
+          <option value="">Selecione o tipo</option>
+          <option value="festa">Festa / casamento</option>
+          <option value="feira">Feira / exposição</option>
+          <option value="evento-corporativo">Evento corporativo</option>
+          <option value="igreja">Igreja / celebração</option>
+          <option value="obra">Obra / canteiro</option>
+          <option value="galpao">Galpão / indústria (sazonal)</option>
+          <option value="outro">Outro</option>
+        </select>
+        <label for="form-periodo">Período de locação</label>
+        <select id="form-periodo" name="periodo" required>
+          <option value="">Selecione o período</option>
+          <option value="1-dia">1 dia</option>
+          <option value="fim-de-semana">Fim de semana</option>
+          <option value="ate-1-semana">Até 1 semana</option>
+          <option value="mensal">Mensal ou mais</option>
+          <option value="nao-sei">Ainda não sei</option>
+        </select>
+        <label for="form-tamanho">Tamanho aproximado</label>
+        <select id="form-tamanho" name="tamanho" required>
+          <option value="">Selecione o tamanho</option>
+          <option value="ate-20">Até 20 m²</option>
+          <option value="20-40">20 a 40 m²</option>
+          <option value="40-80">40 a 80 m²</option>
+          <option value="acima-80">Acima de 80 m²</option>
+        </select>
+        <button type="submit" class="btn-primary">Quero garantir meu orçamento de locação</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ (from LP4) ===== -->
+<section class="faq-section" id="faq">
+<div class="container">
+<p class="diff-label" style="text-align:center;margin-bottom:8px">Perguntas Frequentes</p>
+<h2 class="diff-title" style="text-align:center;max-width:22ch;margin:0 auto clamp(28px,4vw,48px)">Tire suas dúvidas.</h2>
+
+<div class="faq-list">
+<details class="faq-item">
+<summary>Climatizador evaporativo funciona em ambiente fechado?</summary>
+<div class="faq-answer">Funciona melhor com uma saída de ar (porta ou janela aberta). É exatamente esse tipo de detalhe que a gente confirma com você no orçamento, para já indicar o modelo e o número de unidades certos para o seu espaço, sem tentativa e erro.</div>
+</details>
+<details class="faq-item">
+<summary>Qual o período mínimo de locação?</summary>
+<div class="faq-answer">Alugamos por diária, fim de semana, semana ou mês. Você escolhe o período exato do seu evento, obra ou pico de calor, e paga só pelo tempo que precisar, sem contrato longo nem multa de fidelidade.</div>
+</details>
+<details class="faq-item">
+<summary>Como funciona a entrega do climatizador?</summary>
+<div class="faq-answer">Mandamos entregar pronto para usar no endereço combinado. Não realizamos instalação ou fixação: é só ligar na tomada. Fale com a gente para confirmar prazos e condições de entrega e devolução para a sua região.</div>
+</details>
+<details class="faq-item">
+<summary>Alugar vale mais a pena do que comprar?</summary>
+<div class="faq-answer">Para uso pontual (evento, obra, pico de verão), sim: você resolve o calor sem travar capital num equipamento que vai ficar parado 11 meses no depósito. Comprar só compensa para quem usa o ano inteiro; para todo o resto, alugar é mais barato e mais inteligente.</div>
+</details>
+<details class="faq-item">
+<summary>Preciso de instalação especial ou obra no local?</summary>
+<div class="faq-answer">Não. O equipamento roda em rodízios e liga numa tomada comum. Chega pronto para funcionar, sem eletricista, sem furar parede, sem preparar nada antes da entrega. Não realizamos nenhum tipo de instalação ou fixação.</div>
+</details>
+<details class="faq-item">
+<summary>Qual a área de atendimento da locação?</summary>
+<div class="faq-answer">Atendemos todo o Brasil. Fale com a gente para confirmar prazos e condições de entrega para a sua região antes de fechar a data.</div>
+</details>
+<details class="faq-item">
+<summary>E se o equipamento apresentar problema durante o evento?</summary>
+<div class="faq-answer">Todo climatizador sai revisado e testado antes da entrega, com motor WEG e certificação INMETRO. Ainda assim, se algo fugir do previsto durante o seu período de locação, você tem suporte para resolver rápido. Sua festa, obra ou produção não fica na mão.</div>
+</details>
+</div>
+</div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="Manual de Marca/logo footer.svg" alt="Chiller Peças" style="height:44px;width:auto;margin-bottom:16px;">
+        <p>Locação de climatizadores evaporativos para eventos, obras e picos de verão</p>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contato</h4>
+        <p>Tel · (11) 2918-8119</p>
+        <p>WhatsApp · (11) 94051-8767</p>
+        <p>vendas@chillerpecas.com</p>
+        <p>sac@chillerpecas.com</p>
+        <p style="margin-top:4px;font-size:0.85rem;opacity:0.7;">Seg a Qui 7h-18h · Sex 7h-17h · Sáb 8h-13h</p>
+        <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20alugar%20climatizadores%20Chiller%20Pe%C3%A7as" class="footer-wa-btn" target="_blank" rel="noopener" data-cta="footer-whatsapp">Pedir orçamento no WhatsApp</a>
+      </div>
+      <div class="footer-col footer-address">
+        <h4>Endereço · Como chegar</h4>
+        <p>Rua Antônio de Barros, 1093</p>
+        <p>Tatuapé · São Paulo/SP · CEP 03401-000</p>
+        <div class="footer-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3!2d-46.5716!3d-23.5399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzIzLjYiUyA0NsKwMzQnMTcuOCJX!5e0!3m2!1sen!2sbr!4v1" width="100%" height="140" style="border:0;border-radius:6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a href="https://maps.google.com/maps?q=Rua+Antônio+de+Barros+1093+Tatuapé+São+Paulo" class="footer-map-btn" target="_blank" rel="noopener">📍 Chegar na Chiller Peças</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-info">
+    <p><strong>CHILLER PECAS LTDA</strong> · CNPJ 35.028.609/0001-53</p>
+  </div>
+</footer>
+
+<!-- ===== STICKY MOBILE CTA ===== -->
+<div class="sticky-cta" aria-label="Contato rápido">
+  <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa" target="_blank" rel="noopener" data-cta="sticky-mobile-whatsapp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:20px;height:20px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Alugar agora com orçamento grátis
+  </a>
+</div>
+
+<script>
+// ===== HABLLA + UTM TRACKING SYSTEM =====
+(function(){
+  var WEBHOOK_URL = 'https://webhook.hablla.com/v1/6a4276ce041715be2da7e341';
+
+  // Parse URL params (UTMs + gclid)
+  function getUrlParams(){
+    var params = {};
+    var search = window.location.search.substring(1);
+    if(!search) return params;
+    search.split('&').forEach(function(pair){
+      var kv = pair.split('=');
+      params[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || '');
+    });
+    return params;
+  }
+
+  // Store params in sessionStorage on first load
+  var urlParams = getUrlParams();
+  var trackingKeys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'];
+  trackingKeys.forEach(function(key){
+    if(urlParams[key]) sessionStorage.setItem(key, urlParams[key]);
+  });
+
+  // Get stored tracking data
+  function getTrackingData(){
+    var data = {};
+    trackingKeys.forEach(function(key){
+      var val = sessionStorage.getItem(key);
+      if(val) data[key] = val;
+    });
+    return data;
+  }
+
+  // Detect which "dobra" (fold/section) the user is in
+  function getCurrentDobra(){
+    var sections = document.querySelectorAll('section[id], [id].hero, [id].trust-bar, [id].diferenciais, [id].educativa, [id].modelos, [id].aplicacoes, [id].prova-social, [id].faq-section, [id].cta-final');
+    var current = 'header';
+    var scrollY = window.scrollY + window.innerHeight / 2;
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= scrollY){
+        current = sec.id || sec.className.split(' ')[0];
+      }
+    });
+    return current;
+  }
+
+  // Send data to Hablla webhook
+  function sendToHablla(buttonId, buttonText, additionalData){
+    var tracking = getTrackingData();
+    var payload = {
+      event: 'whatsapp_click',
+      timestamp: new Date().toISOString(),
+      page_url: window.location.href,
+      page_title: document.title,
+      referrer: document.referrer,
+      dobra: getCurrentDobra(),
+      button_id: buttonId || 'unknown',
+      button_text: buttonText || 'unknown',
+      utm_source: tracking.utm_source || '',
+      utm_medium: tracking.utm_medium || '',
+      utm_campaign: tracking.utm_campaign || '',
+      utm_term: tracking.utm_term || '',
+      utm_content: tracking.utm_content || '',
+      gclid: tracking.gclid || '',
+      fbclid: tracking.fbclid || '',
+      user_agent: navigator.userAgent,
+      screen_resolution: window.screen.width + 'x' + window.screen.height,
+      viewport: window.innerWidth + 'x' + window.innerHeight
+    };
+    if(additionalData) Object.assign(payload, additionalData);
+
+    // Send to Hablla
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload),
+      keepalive: true
+    }).catch(function(){});
+
+    // Push to dataLayer for GTM/GA4
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'whatsapp_click',
+      whatsapp_button_id: buttonId,
+      whatsapp_button_text: buttonText,
+      whatsapp_dobra: payload.dobra,
+      whatsapp_utm_source: payload.utm_source,
+      whatsapp_utm_campaign: payload.utm_campaign
+    });
+  }
+
+  // Intercept ALL WhatsApp link clicks
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[href*="wa.me"], a[href*="whatsapp"]');
+    if(!link) return;
+
+    e.preventDefault();
+
+    var buttonId = link.id || link.getAttribute('data-cta') || link.closest('section, header, div[id]')?.id || 'unknown';
+    var buttonText = link.textContent.trim().substring(0, 50);
+
+    sendToHablla(buttonId, buttonText);
+
+    // Delay redirect slightly to ensure webhook fires
+    setTimeout(function(){
+      window.open(link.href, '_blank');
+    }, 300);
+  });
+
+  // Intercept form submission (handled below in the main IIFE)
+  var contactForm = document.getElementById('contact-form');
+  if(contactForm){
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      var formData = {};
+      var inputs = contactForm.querySelectorAll('input, select, textarea');
+      inputs.forEach(function(input){
+        if(input.name) formData[input.name] = input.value;
+      });
+
+      sendToHablla('form_submit', 'Formulário de contato', {
+        event: 'form_submit',
+        form_data: formData
+      });
+
+      // Build WhatsApp message with form data
+      var msg = 'Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças.';
+      if(formData.nome) msg += '\nNome: ' + formData.nome;
+      if(formData.telefone) msg += '\nTelefone: ' + formData.telefone;
+      if(formData.tipo_uso) msg += '\nTipo de uso: ' + formData.tipo_uso;
+      if(formData.periodo) msg += '\nPeríodo: ' + formData.periodo;
+      if(formData.tamanho) msg += '\nTamanho: ' + formData.tamanho;
+
+      var waUrl = 'https://wa.me/5511940518767?text=' + encodeURIComponent(msg);
+
+      setTimeout(function(){
+        window.open(waUrl, '_blank');
+      }, 300);
+    });
+  }
+
+  // Track page view with UTMs
+  window.dataLayer = window.dataLayer || [];
+  var tracking = getTrackingData();
+  window.dataLayer.push({
+    event: 'page_view_with_params',
+    utm_source: tracking.utm_source || '',
+    utm_medium: tracking.utm_medium || '',
+    utm_campaign: tracking.utm_campaign || '',
+    gclid: tracking.gclid || ''
+  });
+
+  // Expose sendToHablla globally for form handlers
+  window.sendToHablla = sendToHablla;
+})();
+// ===== END TRACKING SYSTEM =====
+
+(function(){
+  'use strict';
+
+  // ── Header scroll effect ──
+  const header = document.querySelector('.site-header');
+  let lastScroll = 0;
+  function onScroll() {
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    lastScroll = y;
+  }
+  window.addEventListener('scroll', onScroll, {passive: true});
+
+  // ── Mobile menu ──
+  const menuBtn = document.querySelector('.menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', function() {
+    const open = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  mobileMenu.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // ── Sticky CTA on mobile ──
+  const stickyCta = document.querySelector('.sticky-cta');
+  const hero = document.querySelector('.hero');
+  function checkSticky() {
+    if (window.innerWidth < 768) {
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      stickyCta.classList.toggle('visible', heroBottom < 0);
+    } else {
+      stickyCta.classList.remove('visible');
+    }
+  }
+  window.addEventListener('scroll', checkSticky, {passive: true});
+  window.addEventListener('resize', checkSticky);
+
+  // ── Intersection Observer for reveals (sempre anima) ──
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const revealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+
+  document.querySelectorAll('.reveal, .slide-right').forEach(function(el) {
+    revealObserver.observe(el);
+  });
+
+  // ── Count-up animation (sempre anima) ──
+  var countEls = document.querySelectorAll('[data-count]');
+  var countObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      var duration = 1200;
+      var start = performance.now();
+      function tick(now) {
+        var progress = Math.min((now - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(target * eased).toLocaleString('pt-BR');
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      countObserver.unobserve(el);
+    });
+  }, {threshold: 0.5});
+  countEls.forEach(function(el) { countObserver.observe(el); });
+
+  // ── Count-up for .count-up[data-target] (90% economia block) ──
+  var countUpEls = document.querySelectorAll('.count-up[data-target]');
+  if (prefersReduced) {
+    countUpEls.forEach(function(el) {
+      el.textContent = el.getAttribute('data-target') + (el.getAttribute('data-suffix') || '');
+    });
+  } else {
+    countUpEls.forEach(function(el) {
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (!e.isIntersecting) return;
+          var t = parseInt(el.getAttribute('data-target'), 10);
+          var s = el.getAttribute('data-suffix') || '';
+          var dur = 1200, st = performance.now();
+          function tick(now) { var p = Math.min((now-st)/dur,1); var ea = 1-Math.pow(1-p,3); el.textContent = Math.round(t*ea)+s; if(p<1) requestAnimationFrame(tick); }
+          requestAnimationFrame(tick);
+          obs.unobserve(el);
+        });
+      }, {threshold: 0.5});
+      obs.observe(el);
+    });
+  }
+
+  // ── FAQ accordion (native <details>, close others on open) ──
+  document.querySelectorAll('.faq-section .faq-item').forEach(function(detail) {
+    detail.addEventListener('toggle', function() {
+      if (detail.open) {
+        document.querySelectorAll('.faq-section .faq-item[open]').forEach(function(other) {
+          if (other !== detail) other.removeAttribute('open');
+        });
+      }
+    });
+  });
+
+  // ── Form phone mask ──
+  var telInput = document.getElementById('form-telefone');
+  if (telInput) {
+    telInput.addEventListener('input', function(e) {
+      var v = e.target.value.replace(/\D/g, '');
+      if (v.length > 11) v = v.slice(0, 11);
+      if (v.length > 6) {
+        e.target.value = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+      } else if (v.length > 2) {
+        e.target.value = '(' + v.slice(0,2) + ') ' + v.slice(2);
+      } else if (v.length > 0) {
+        e.target.value = '(' + v;
+      }
+    });
+  }
+
+  // Note: Form submit handler is now managed by the tracking system above
+})();
+</script>
+
+<!-- ===== JS DOS BLOCOS EXTRA (STATS + SIMULAÇÃO) ===== -->
+<script>
+(function(){
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // STATS — contagem animada (usa data-stat/data-suffix/data-text)
+  function animateStat(el){
+    if(el.dataset.done) return; el.dataset.done = 1;
+    var target = +el.dataset.stat, suffix = el.dataset.suffix || '', txt = el.dataset.text;
+    if(txt && target === 0){ el.textContent = txt; return; }
+    var dur = 1400, t0 = performance.now();
+    function tick(now){
+      var p = Math.min((now - t0) / dur, 1);
+      var e = 1 - Math.pow(1 - p, 3);
+      var v = Math.round(target * e);
+      el.textContent = (target >= 1000 ? v.toLocaleString('pt-BR') : v) + suffix;
+      if(p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var statsWrap = document.querySelector('.stats .container');
+  if(statsWrap){
+    var so = new IntersectionObserver(function(en){
+      en.forEach(function(e){ if(e.isIntersecting){ e.target.querySelectorAll('[data-stat]').forEach(animateStat); so.unobserve(e.target); } });
+    }, { threshold: 0.4 });
+    so.observe(statsWrap);
+  }
+
+  // SIMULAÇÃO — gera os streaks de ar (sempre)
+  var sim = document.querySelector('.sim');
+  if(sim){
+    for(var i=0;i<10;i++){ var d=document.createElement('div'); d.className='s hot'; d.style.cssText='left:4%;top:'+(12+i*8)+'%;width:'+(34+Math.random()*26)+'px;animation:hin '+(1.6+Math.random()*0.7)+'s linear '+(i*0.16)+'s infinite'; sim.appendChild(d); }
+    for(var j=0;j<12;j++){ var c=document.createElement('div'); c.className='s cool'; c.style.cssText='left:60%;top:'+(10+j*7)+'%;width:'+(34+Math.random()*30)+'px;animation:cout '+(1.6+Math.random()*0.7)+'s linear '+(j*0.14)+'s infinite'; sim.appendChild(c); }
+  }
+})();
+</script>
+</body>
+</html>

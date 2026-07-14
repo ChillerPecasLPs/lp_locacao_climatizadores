@@ -1,0 +1,7 @@
+node_modules/
+*.zip
+.agents/
+.codex/
+skills-lock.json
+*.docx
+*.pdf
