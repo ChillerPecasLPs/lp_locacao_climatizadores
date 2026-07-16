@@ -3,12 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Climatizadores Evaporativos Portáteis | Chiller Peças</title>
+<title>Locação de Climatizador Evaporativo | Chiller Peças</title>
 <link rel="icon" type="image/svg+xml" href="Manual de Marca/favicon.ico.svg">
-<meta name="description" content="Climatizadores evaporativos portáteis Chiller Peças. Economia de até 90% comparado ao ar-condicionado. Motor WEG, certificação INMETRO, fabricação nacional.">
+<meta name="description" content="Alugue climatizador evaporativo com motor WEG e certificação INMETRO. Sem instalação, entrega pronta para usar. Peça seu orçamento agora.">
+<link rel="canonical" href="https://lp-locacao-climatizadores.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://lp-locacao-climatizadores.vercel.app/">
+<meta property="og:title" content="Locação de Climatizador Evaporativo | Chiller Peças">
+<meta property="og:description" content="Alugue climatizador evaporativo com motor WEG e certificação INMETRO. Sem instalação, entrega pronta para usar. Peça seu orçamento agora.">
+<meta property="og:image" content="https://lp-locacao-climatizadores.vercel.app/climatizadores-fotos/hero-novo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Locação de Climatizador Evaporativo | Chiller Peças">
+<meta name="twitter:description" content="Alugue climatizador evaporativo com motor WEG e certificação INMETRO. Sem instalação, entrega pronta para usar. Peça seu orçamento agora.">
+<meta name="twitter:image" content="https://lp-locacao-climatizadores.vercel.app/climatizadores-fotos/hero-novo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="climatizadores-fotos/hero-novo.webp" fetchpriority="high">
 <style>
 /* ── RESET & BASE ───────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -123,19 +135,20 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   border-top:1px solid rgba(8,91,167,0.2);
 }
 .mobile-menu.open{display:flex}
-.mobile-menu a{
+.mobile-menu a,.mobile-menu button{
   color:rgba(255,255,255,0.75);font-size:1rem;font-weight:600;
   padding:0.75rem 0;
   border-bottom:1px solid rgba(8,91,167,0.1);
   transition:color 0.2s;
+  text-align:left;width:100%;background:none;border-left:0;border-right:0;border-top:0;
 }
-.mobile-menu a:hover{color:var(--white)}
+.mobile-menu a:hover,.mobile-menu button:hover{color:var(--white)}
 
 /* ── HERO ───────────────────────────────────────── */
 .hero{
   min-height:calc(100vh - var(--header-h) - 52px);
   min-height:calc(100dvh - var(--header-h) - 52px);
-  background:linear-gradient(90deg,rgba(4,30,58,0.94) 0%,rgba(4,30,58,0.80) 34%,rgba(4,30,58,0.42) 60%,rgba(4,30,58,0.10) 100%),url("climatizadores-fotos/hero-novo.png") center center/cover no-repeat var(--blue);
+  background:linear-gradient(90deg,rgba(4,30,58,0.94) 0%,rgba(4,30,58,0.80) 34%,rgba(4,30,58,0.42) 60%,rgba(4,30,58,0.10) 100%),url("climatizadores-fotos/hero-novo.webp") center center/cover no-repeat var(--blue);
   display:flex;align-items:center;
   position:relative;
   overflow:hidden;
@@ -881,16 +894,43 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
 }
 .cta-pulse{animation:ctaPulse 2.2s cubic-bezier(.4,0,.6,1) infinite}
+
+/* ── WHATSAPP LEAD MODAL ─────────────────────── */
+.whatsapp-modal{color:var(--text);background:transparent;border:0;width:calc(100% - 2rem);max-width:440px;margin:auto;padding:0}
+.whatsapp-modal::backdrop{backdrop-filter:blur(4px);background:rgba(8,91,167,0.55)}
+.whatsapp-modal[open]{animation:wa-modal-in 0.25s ease-out}
+@keyframes wa-modal-in{from{opacity:0;transform:translateY(12px) scale(0.98)}to{opacity:1;transform:none}}
+.whatsapp-modal__form{background:var(--white);border-radius:18px;display:flex;flex-direction:column;gap:0.75rem;padding:2rem 1.5rem 1.5rem;position:relative;box-shadow:0 30px 60px rgba(0,0,0,0.25)}
+.whatsapp-modal__close{position:absolute;top:0.5rem;right:0.75rem;width:36px;height:36px;border-radius:999px;border:0;background:none;color:#666;font-size:1.75rem;line-height:1;cursor:pointer}
+.whatsapp-modal__close:hover{color:var(--text);background:#f2f2f2}
+.whatsapp-modal__icon{width:56px;height:56px;border-radius:999px;background:var(--green-wa);color:var(--white);display:grid;place-items:center;margin:0 auto 0.25rem}
+.whatsapp-modal__icon svg{width:32px;height:32px}
+.whatsapp-modal h2{font-family:var(--font-heading);text-align:center;color:var(--blue-deep);margin:0;font-size:1.4rem;text-transform:none;letter-spacing:0}
+.whatsapp-modal p#wa-modal-desc{text-align:center;color:var(--text-muted);margin:0 0 0.5rem;font-size:0.95rem}
+.whatsapp-modal label{color:#333;font-size:0.85rem;font-weight:600}
+.whatsapp-modal input[type="tel"]{border:2px solid var(--neutral-200);border-radius:10px;width:100%;padding:0.85rem 1rem;font-family:inherit;font-size:1rem;transition:border-color .15s,box-shadow .15s}
+.whatsapp-modal input[type="tel"]:focus{border-color:var(--blue-light);outline:none;box-shadow:0 0 0 3px rgba(16,139,209,0.18)}
+.whatsapp-modal input[aria-invalid="true"]{border-color:#d7263d;box-shadow:0 0 0 3px rgba(215,38,61,0.15)}
+.whatsapp-modal__error{color:#d7263d;font-size:0.85rem;min-height:1.1em}
+.whatsapp-modal__submit.whatsapp-modal__submit{width:100%;justify-content:center;position:relative}
+.whatsapp-modal__submit.is-loading .whatsapp-modal__submit-label{visibility:hidden}
+.whatsapp-modal__submit-spinner{display:none;position:absolute;top:50%;left:50%;width:22px;height:22px;margin:-11px 0 0 -11px;border:3px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:999px;animation:wa-spin .8s linear infinite}
+.whatsapp-modal__submit.is-loading .whatsapp-modal__submit-spinner{display:block}
+@keyframes wa-spin{to{transform:rotate(360deg)}}
+.whatsapp-modal__disclaimer{color:#777;text-align:center;margin:0;font-size:0.75rem;line-height:1.4}
+.whatsapp-modal__disclaimer a{color:var(--blue-light);text-decoration:underline;text-underline-offset:2px}
+.whatsapp-modal__disclaimer a:hover{color:var(--blue-deep)}
+.whatsapp-modal__status{text-align:center;min-height:1.2em;margin-top:0.25rem;font-size:0.9rem}
+.whatsapp-modal__status[data-kind="success"]{color:#2a7a1f}
+.whatsapp-modal__status[data-kind="error"]{color:#d7263d}
+.whatsapp-modal__status[data-kind="loading"]{color:#555}
 </style>
 
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N4KWZTHS');</script>
 <!-- End Google Tag Manager -->
 
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
-<!-- End GA4 -->
+<!-- GA4: configurar como tag dentro do GTM assim que o Measurement ID estiver disponível -->
 
 <!-- Microsoft Clarity -->
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+(i);y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","XXXXXXX");</script>
@@ -898,6 +938,71 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 <!-- Google Search Console verification -->
 <meta name="google-site-verification" content="XXXXXXX">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Climatizador evaporativo funciona em ambiente fechado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Funciona melhor com uma saída de ar (porta ou janela aberta). É exatamente esse tipo de detalhe que a gente confirma com você no orçamento, para já indicar o modelo e o número de unidades certos para o seu espaço, sem tentativa e erro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual o período mínimo de locação?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alugamos por diária, fim de semana, semana ou mês. Você escolhe o período exato do seu evento, obra ou pico de calor, e paga só pelo tempo que precisar, sem contrato longo nem multa de fidelidade."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como funciona a entrega do climatizador?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mandamos entregar pronto para usar no endereço combinado. Não realizamos instalação ou fixação: é só ligar na tomada. Fale com a gente para confirmar prazos e condições de entrega e devolução para a sua região."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Alugar vale mais a pena do que comprar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para uso pontual (evento, obra, pico de verão), sim: você resolve o calor sem travar capital num equipamento que vai ficar parado 11 meses no depósito. Comprar só compensa para quem usa o ano inteiro; para todo o resto, alugar é mais barato e mais inteligente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso de instalação especial ou obra no local?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O equipamento roda em rodízios e liga numa tomada comum. Chega pronto para funcionar, sem eletricista, sem furar parede, sem preparar nada antes da entrega. Não realizamos nenhum tipo de instalação ou fixação."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a área de atendimento da locação?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Atendemos todo o Brasil. Fale com a gente para confirmar prazos e condições de entrega para a sua região antes de fechar a data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "E se o equipamento apresentar problema durante a locação?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todo climatizador sai revisado e testado antes da entrega, com motor WEG e certificação INMETRO. Ainda assim, se algo fugir do previsto durante o seu período de locação, você tem suporte para resolver rápido. Sua festa, obra ou produção não fica na mão."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -909,7 +1014,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 </svg>
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4KWZTHS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- ===== HEADER ===== -->
@@ -927,10 +1032,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
       <a href="#faq">FAQ</a>
     </nav>
     <div class="header-cta-wrap">
-      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa" target="_blank" rel="noopener" aria-label="Solicitar orçamento pelo WhatsApp" data-cta="header-whatsapp">
+      <button type="button" class="cta-wa" aria-label="Solicitar orçamento pelo WhatsApp" data-open-whatsapp-modal data-gtm-location="header-whatsapp" data-wa-message="Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Alugar Agora
-      </a>
+      </button>
     </div>
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span><span></span>
@@ -945,7 +1050,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   <a href="#aplicacoes">Aplicações</a>
   <a href="#depoimentos">Depoimentos</a>
   <a href="#faq">FAQ</a>
-  <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" target="_blank" rel="noopener" style="color:var(--green-wa)" data-cta="other-whatsapp">WhatsApp</a>
+  <button type="button" data-open-whatsapp-modal data-gtm-location="other-whatsapp" data-wa-message="Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças" style="color:var(--green-wa)">WhatsApp</button>
 </nav>
 
 <!-- ===== HERO ===== -->
@@ -969,10 +1074,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
       <h1>Climatize sua operação, restaurante ou escritório economizando muito.</h1>
       <p class="hero-subtitle">Alugar custa muito menos do que parece, e uma fração do que seria comprar um equipamento para usar uma vez. Você recebe pronto para usar, sem instalação, e paga só pela diária.</p>
       <div class="hero-cta-group">
-        <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa" target="_blank" rel="noopener" data-cta="hero-whatsapp">
+        <button type="button" class="cta-wa" data-open-whatsapp-modal data-gtm-location="hero-whatsapp" data-wa-message="Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Quero alugar um Climatizador
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -1021,10 +1126,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 <div style="display:flex;flex-direction:column;gap:1rem;">
 <h2 class="hero-headline" style="margin:0;">Mais de <span data-count="2000" style="color:#ff901c">0</span> clientes já optaram por essa solução no calor.</h2>
 <p class="hero-sub" style="margin:0;">De casamento a Metalúrgicas, todo mundo economizou: a diária de aluguel sai muito mais barata do que comprar um equipamento para deixar parado o resto do ano. Você recebe pronto para usar, sem instalação, com motor WEG e certificação INMETRO garantindo o resultado.</p>
-<a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-primary" data-cta="diferenciais-whatsapp" target="_blank" rel="noopener" style="align-self:flex-start;">
+<button type="button" class="cta-primary" data-open-whatsapp-modal data-gtm-location="diferenciais-whatsapp" data-wa-message="Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças" style="align-self:flex-start;">
 <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 Alugar Agora
-</a>
+</button>
 </div>
 <img src="climatizadores-fotos/800x400.svg" alt="Climatizadores Chiller Peças em ambiente de restaurante" loading="lazy" style="width:100%;height:auto;border-radius:12px;">
 </div>
@@ -1048,15 +1153,15 @@ Alugar Agora
 <figcaption>Centro de Distribuição, Ribeirão Preto/SP</figcaption>
 </figure>
 <figure class="install-card" role="listitem">
-<img src="climatizadores-fotos/casamento.png" alt="Climatizador em cerimônia de casamento na igreja" loading="lazy" width="260" height="170">
+<img src="climatizadores-fotos/casamento.webp" alt="Climatizador em cerimônia de casamento na igreja" loading="lazy" width="260" height="170">
 <figcaption>Cerimônia de casamento, São Paulo/SP</figcaption>
 </figure>
 <figure class="install-card" role="listitem">
-<img src="climatizadores-fotos/showroom_chillerpecas.jpeg" alt="Climatizadores em exposição no showroom Chiller Peças" loading="lazy" width="260" height="170">
+<img src="climatizadores-fotos/showroom_chillerpecas.webp" alt="Climatizadores em exposição no showroom Chiller Peças" loading="lazy" width="260" height="170">
 <figcaption>Showroom Chiller Peças, São Paulo/SP</figcaption>
 </figure>
 <figure class="install-card" role="listitem">
-<img src="climatizadores-fotos/recepção corporativa.png" alt="Climatizador em recepção corporativa" loading="lazy" width="260" height="170">
+<img src="climatizadores-fotos/recepção corporativa.webp" alt="Climatizador em recepção corporativa" loading="lazy" width="260" height="170">
 <figcaption>Recepção corporativa, São Paulo/SP</figcaption>
 </figure>
 <!-- duplicados para loop infinito -->
@@ -1077,15 +1182,15 @@ Alugar Agora
 <figcaption>Centro de Distribuição, Ribeirão Preto/SP</figcaption>
 </figure>
 <figure class="install-card" role="listitem" aria-hidden="true">
-<img src="climatizadores-fotos/casamento.png" alt="" loading="lazy" width="260" height="170">
+<img src="climatizadores-fotos/casamento.webp" alt="" loading="lazy" width="260" height="170">
 <figcaption>Cerimônia de casamento, São Paulo/SP</figcaption>
 </figure>
 <figure class="install-card" role="listitem" aria-hidden="true">
-<img src="climatizadores-fotos/showroom_chillerpecas.jpeg" alt="" loading="lazy" width="260" height="170">
+<img src="climatizadores-fotos/showroom_chillerpecas.webp" alt="" loading="lazy" width="260" height="170">
 <figcaption>Showroom Chiller Peças, São Paulo/SP</figcaption>
 </figure>
 <figure class="install-card" role="listitem" aria-hidden="true">
-<img src="climatizadores-fotos/recepção corporativa.png" alt="" loading="lazy" width="260" height="170">
+<img src="climatizadores-fotos/recepção corporativa.webp" alt="" loading="lazy" width="260" height="170">
 <figcaption>Recepção corporativa, São Paulo/SP</figcaption>
 </figure>
 </div>
@@ -1106,7 +1211,7 @@ Alugar Agora
       <div class="zone zcool"><svg><use href="#i-snow"/></svg> AR FRESCO SAI</div>
       <div class="temp thot">38°C</div>
       <div class="temp tcool">24°C</div>
-      <img class="prod" src="climatizadores-fotos/70L-06.png" alt="Climatizador evaporativo Chiller Peças puxando ar quente e devolvendo ar fresco">
+      <img class="prod" src="climatizadores-fotos/70L-06.webp" alt="Climatizador evaporativo Chiller Peças puxando ar quente e devolvendo ar fresco">
     </div>
   </div>
 </section>
@@ -1140,10 +1245,10 @@ Alugar Agora
       <p style="text-align:center;color:rgba(255,255,255,.8);font-size:.9rem">Zero capital imobilizado: você usa o climatizador só quando precisa, e devolve quando o evento ou a obra terminam.</p>
     </div>
     <div class="cta-block-wrap reveal" style="grid-column:1/-1">
-      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-primary cta-pulse" data-cta="economia-whatsapp" target="_blank" rel="noopener">
+      <button type="button" class="cta-primary cta-pulse" data-open-whatsapp-modal data-gtm-location="economia-whatsapp" data-wa-message="Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças">
         <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Alugar sem burocracia
-      </a>
+      </button>
     </div>
   </div>
 </section>
@@ -1156,7 +1261,7 @@ Alugar Agora
 
 <div class="models-grid">
 <article class="model-card reveal">
-<img src="climatizadores-fotos/45L-04.jpg" alt="Climatizador Evaporativo Portátil Chiller Peças 45 Litros" loading="lazy" width="200" height="200">
+<img src="climatizadores-fotos/45L-04.webp" alt="Climatizador Evaporativo Portátil Chiller Peças 45 Litros" loading="lazy" width="200" height="200">
 <h3 class="model-name">Climatizador 45L</h3>
 <p class="model-cap">Ambientes de até 40m²</p>
 <ul class="model-specs">
@@ -1165,11 +1270,11 @@ Alugar Agora
 <li><span>Potência</span><strong>160W</strong></li>
 <li><span>Motor</span><strong>WEG</strong></li>
 </ul>
-<a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20alugar%20o%20Climatizador%2045L" class="cta-model" data-cta="modelo-45l-whatsapp" target="_blank" rel="noopener">Alugar este modelo</a>
+<button type="button" class="cta-model" data-open-whatsapp-modal data-gtm-location="modelo-45l-whatsapp" data-wa-message="Olá! Gostaria de alugar o Climatizador 45L">Alugar este modelo</button>
 </article>
 <article class="model-card reveal">
 <span class="model-badge">Mais alugado</span>
-<img src="climatizadores-fotos/70L-03.jpg" alt="Climatizador Evaporativo Portátil Chiller Peças 70 Litros" loading="lazy" width="200" height="200">
+<img src="climatizadores-fotos/70L-03.webp" alt="Climatizador Evaporativo Portátil Chiller Peças 70 Litros" loading="lazy" width="200" height="200">
 <h3 class="model-name">Climatizador 70L</h3>
 <p class="model-cap">Ambientes de até 70m²</p>
 <ul class="model-specs">
@@ -1178,10 +1283,10 @@ Alugar Agora
 <li><span>Potência</span><strong>200W</strong></li>
 <li><span>Motor</span><strong>WEG</strong></li>
 </ul>
-<a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20alugar%20o%20Climatizador%2070L" class="cta-model" data-cta="modelo-70l-whatsapp" target="_blank" rel="noopener">Quero alugar este</a>
+<button type="button" class="cta-model" data-open-whatsapp-modal data-gtm-location="modelo-70l-whatsapp" data-wa-message="Olá! Gostaria de alugar o Climatizador 70L">Quero alugar este</button>
 </article>
 <article class="model-card reveal">
-<img src="climatizadores-fotos/100L-04.jpg" alt="Climatizador Evaporativo Portátil Chiller Peças Duplo" loading="lazy" width="200" height="200">
+<img src="climatizadores-fotos/100L-04.webp" alt="Climatizador Evaporativo Portátil Chiller Peças Duplo" loading="lazy" width="200" height="200">
 <h3 class="model-name">Climatizador Duplo</h3>
 <p class="model-cap">Galpões acima de 150m²</p>
 <ul class="model-specs">
@@ -1190,7 +1295,7 @@ Alugar Agora
 <li><span>Potência</span><strong>450W</strong></li>
 <li><span>Motor</span><strong>2x WEG</strong></li>
 </ul>
-<a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20alugar%20o%20Climatizador%20Duplo" class="cta-model" data-cta="modelo-duplo-whatsapp" target="_blank" rel="noopener">Alugar o Duplo agora</a>
+<button type="button" class="cta-model" data-open-whatsapp-modal data-gtm-location="modelo-duplo-whatsapp" data-wa-message="Olá! Gostaria de alugar o Climatizador Duplo">Alugar o Duplo agora</button>
 </article>
 </div>
 </div>
@@ -1316,10 +1421,10 @@ Alugar Agora
     </div>
 
     <div class="cta-block-wrap reveal">
-      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20ajuda%20para%20escolher%20o%20climatizador%20ideal%20para%20locação" class="cta-wa cta-pulse" data-cta="comparacao-whatsapp" target="_blank" rel="noopener" style="justify-content:center">
+      <button type="button" class="cta-wa cta-pulse" data-open-whatsapp-modal data-gtm-location="comparacao-whatsapp" data-wa-message="Olá! Gostaria de ajuda para escolher o climatizador ideal para locação" style="justify-content:center">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Escolher com ajuda de um especialista
-      </a>
+      </button>
     </div>
   </div>
 </section>
@@ -1332,7 +1437,7 @@ Alugar Agora
     <p class="lead reveal">Você precisa de ar fresco por um período, não de um aparelho parado no seu patrimônio depois que o evento, a obra ou a temporada acabar. Veja lado a lado por que alugar ganha.</p>
     <div class="duel reveal">
       <div class="side win">
-        <div class="fade-img" style="background-image:url('climatizadores-fotos/carr05.png')" aria-hidden="true"></div>
+        <div class="fade-img" style="background-image:url('climatizadores-fotos/carr05.webp')" aria-hidden="true"></div>
         <div class="head"><span class="ic">✓</span> CLIMATIZADOR ALUGADO</div>
         <div class="kick">Chega, refresca e some quando você não precisa mais.</div>
         <div class="body">
@@ -1357,10 +1462,10 @@ Alugar Agora
     </div>
     <div class="duel-foot reveal">Até 90% mais barato na conta de luz, e você só paga pelos dias que realmente precisa.</div>
     <div class="cta-block-wrap reveal">
-      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa cta-pulse" data-cta="duelo-whatsapp" target="_blank" rel="noopener" style="justify-content:center">
+      <button type="button" class="cta-wa cta-pulse" data-open-whatsapp-modal data-gtm-location="duelo-whatsapp" data-wa-message="Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças" style="justify-content:center">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Alugar meu climatizador agora
-      </a>
+      </button>
     </div>
   </div>
 </section>
@@ -1374,7 +1479,7 @@ Alugar Agora
 
     <div class="aplicacoes-grid">
       <div class="aplicacao-card reveal">
-        <img src="climatizadores-fotos/carr02.png" alt="Climatizador evaporativo Chiller Peças em oficina mecânica" loading="lazy" width="600" height="400">
+        <img src="climatizadores-fotos/carr02.webp" alt="Climatizador evaporativo Chiller Peças em oficina mecânica" loading="lazy" width="600" height="400">
         <div class="aplicacao-overlay">
           <span class="aplicacao-tag">Dia de feirão</span>
           <span class="aplicacao-name">Oficinas mecânicas</span>
@@ -1382,7 +1487,7 @@ Alugar Agora
         </div>
       </div>
       <div class="aplicacao-card reveal">
-        <img src="climatizadores-fotos/45L-02.jpg" alt="Climatizador evaporativo Chiller Peças 45L em restaurante" loading="lazy" width="600" height="400">
+        <img src="climatizadores-fotos/45L-02.webp" alt="Climatizador evaporativo Chiller Peças 45L em restaurante" loading="lazy" width="600" height="400">
         <div class="aplicacao-overlay">
           <span class="aplicacao-tag">Noite especial</span>
           <span class="aplicacao-name">Restaurantes e bares</span>
@@ -1390,7 +1495,7 @@ Alugar Agora
         </div>
       </div>
       <div class="aplicacao-card reveal">
-        <img src="climatizadores-fotos/escritorio.png" alt="Climatizador evaporativo Chiller Peças em escritório aberto" loading="lazy" width="600" height="400">
+        <img src="climatizadores-fotos/escritorio.webp" alt="Climatizador evaporativo Chiller Peças em escritório aberto" loading="lazy" width="600" height="400">
         <div class="aplicacao-overlay">
           <span class="aplicacao-tag">Evento pontual</span>
           <span class="aplicacao-name">Escritórios e coworkings</span>
@@ -1398,7 +1503,7 @@ Alugar Agora
         </div>
       </div>
       <div class="aplicacao-card reveal">
-        <img src="climatizadores-fotos/igreja.png" alt="Climatizador evaporativo Chiller Peças em igreja" loading="lazy" width="600" height="400">
+        <img src="climatizadores-fotos/igreja.webp" alt="Climatizador evaporativo Chiller Peças em igreja" loading="lazy" width="600" height="400">
         <div class="aplicacao-overlay">
           <span class="aplicacao-tag">Celebração especial</span>
           <span class="aplicacao-name">Igrejas e celebrações</span>
@@ -1406,7 +1511,7 @@ Alugar Agora
         </div>
       </div>
       <div class="aplicacao-card reveal">
-        <img src="climatizadores-fotos/carr03.png" alt="Climatizador evaporativo Chiller Peças Duplo em feira de exposição" loading="lazy" width="600" height="400">
+        <img src="climatizadores-fotos/carr03.webp" alt="Climatizador evaporativo Chiller Peças Duplo em feira de exposição" loading="lazy" width="600" height="400">
         <div class="aplicacao-overlay">
           <span class="aplicacao-tag">Três dias de feira</span>
           <span class="aplicacao-name">Feiras e exposições</span>
@@ -1414,7 +1519,7 @@ Alugar Agora
         </div>
       </div>
       <div class="aplicacao-card reveal">
-        <img src="climatizadores-fotos/industrial.png" alt="Climatizador evaporativo Chiller Peças Duplo em fábrica" loading="lazy" width="600" height="400">
+        <img src="climatizadores-fotos/industrial.webp" alt="Climatizador evaporativo Chiller Peças Duplo em fábrica" loading="lazy" width="600" height="400">
         <div class="aplicacao-overlay">
           <span class="aplicacao-tag">Pico da temporada</span>
           <span class="aplicacao-name">Fábricas</span>
@@ -1424,10 +1529,10 @@ Alugar Agora
     </div>
 
     <div class="cta-block-wrap reveal">
-      <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa cta-pulse" data-cta="aplicacoes-whatsapp" target="_blank" rel="noopener" style="justify-content:center">
+      <button type="button" class="cta-wa cta-pulse" data-open-whatsapp-modal data-gtm-location="aplicacoes-whatsapp" data-wa-message="Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças" style="justify-content:center">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Reservar o modelo certo para o meu período
-      </a>
+      </button>
     </div>
   </div>
 </section>
@@ -1485,10 +1590,10 @@ Alugar Agora
           <p>Me chame no WhatsApp com a data do evento e o tamanho do ambiente. Em minutos você recebe o modelo indicado, o valor da diária e a disponibilidade para o seu período.</p>
         </div>
         <div class="cta-whatsapp-action">
-          <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="btn-primary" target="_blank" rel="noopener noreferrer" style="width:fit-content" data-cta="cta-final-whatsapp">
+          <button type="button" class="btn-primary" data-open-whatsapp-modal data-gtm-location="cta-final-whatsapp" data-wa-message="Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças" style="width:fit-content">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Garantir minha data de locação
-          </a>
+          </button>
           <p class="cta-helper">Resposta rápida em horário comercial. Você fala com quem organiza a sua locação, não com robô.</p>
         </div>
       </div>
@@ -1585,7 +1690,7 @@ Alugar Agora
         <p>vendas@chillerpecas.com</p>
         <p>sac@chillerpecas.com</p>
         <p style="margin-top:4px;font-size:0.85rem;opacity:0.7;">Seg a Qui 7h-18h · Sex 7h-17h · Sáb 8h-13h</p>
-        <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20alugar%20climatizadores%20Chiller%20Pe%C3%A7as" class="footer-wa-btn" target="_blank" rel="noopener" data-cta="footer-whatsapp">Pedir orçamento no WhatsApp</a>
+        <button type="button" class="footer-wa-btn" data-open-whatsapp-modal data-gtm-location="footer-whatsapp" data-wa-message="Olá! Gostaria de alugar climatizadores Chiller Peças">Pedir orçamento no WhatsApp</button>
       </div>
       <div class="footer-col footer-address">
         <h4>Endereço · Como chegar</h4>
@@ -1605,16 +1710,41 @@ Alugar Agora
 
 <!-- ===== STICKY MOBILE CTA ===== -->
 <div class="sticky-cta" aria-label="Contato rápido">
-  <a href="https://wa.me/5511940518767?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o%20de%20climatizadores%20Chiller%20Pe%C3%A7as" class="cta-wa" target="_blank" rel="noopener" data-cta="sticky-mobile-whatsapp">
+  <button type="button" class="cta-wa" data-open-whatsapp-modal data-gtm-location="sticky-mobile-whatsapp" data-wa-message="Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:20px;height:20px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     Alugar agora com orçamento grátis
-  </a>
+  </button>
 </div>
+
+<!-- ===== WHATSAPP LEAD MODAL ===== -->
+<dialog id="whatsapp-modal" class="whatsapp-modal" aria-labelledby="wa-modal-title" aria-describedby="wa-modal-desc">
+  <form class="whatsapp-modal__form" id="whatsapp-form" novalidate>
+    <div aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+      <label for="wa-website">Não preencha este campo:</label>
+      <input id="wa-website" type="text" name="website" tabindex="-1" autocomplete="off">
+    </div>
+    <button type="button" class="whatsapp-modal__close" aria-label="Fechar" data-close-modal>×</button>
+    <div class="whatsapp-modal__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+    <h2 id="wa-modal-title">Chame nosso especialista agora</h2>
+    <p id="wa-modal-desc">Digite seu WhatsApp e fale direto com um especialista dedicado — orçamento na hora, sem espera.</p>
+    <label for="wa-phone">Seu WhatsApp</label>
+    <input id="wa-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(11) 9XXXX-XXXX" required minlength="14" maxlength="15" aria-invalid="false" aria-describedby="wa-phone-error">
+    <span id="wa-phone-error" class="whatsapp-modal__error" role="alert"></span>
+    <button type="submit" class="btn-primary whatsapp-modal__submit" id="wa-submit" data-gtm-event="cta_click" data-gtm-location="modal" data-gtm-label="solicitar_orcamento" data-gtm-category="whatsapp">
+      <span class="whatsapp-modal__submit-label">Falar com especialista agora</span>
+      <span class="whatsapp-modal__submit-spinner" aria-hidden="true"></span>
+    </button>
+    <p class="whatsapp-modal__disclaimer">Ao enviar, você autoriza a Chiller Peças (CNPJ 35.028.609/0001-53) a entrar em contato via WhatsApp/telefone para atender sua locação, conforme nossa <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p>
+    <div class="whatsapp-modal__status" role="status" aria-live="polite"></div>
+  </form>
+</dialog>
 
 <script>
 // ===== HABLLA + UTM TRACKING SYSTEM =====
 (function(){
-  var WEBHOOK_URL = 'https://webhook.hablla.com/v1/6a4276ce041715be2da7e341';
+  var WEBHOOK_URL = 'https://webhook.hablla.com/v1/6a31499df1eaa75607352b59';
 
   // Parse URL params (UTMs + gclid)
   function getUrlParams(){
@@ -1703,24 +1833,6 @@ Alugar Agora
     });
   }
 
-  // Intercept ALL WhatsApp link clicks
-  document.addEventListener('click', function(e){
-    var link = e.target.closest('a[href*="wa.me"], a[href*="whatsapp"]');
-    if(!link) return;
-
-    e.preventDefault();
-
-    var buttonId = link.id || link.getAttribute('data-cta') || link.closest('section, header, div[id]')?.id || 'unknown';
-    var buttonText = link.textContent.trim().substring(0, 50);
-
-    sendToHablla(buttonId, buttonText);
-
-    // Delay redirect slightly to ensure webhook fires
-    setTimeout(function(){
-      window.open(link.href, '_blank');
-    }, 300);
-  });
-
   // Intercept form submission (handled below in the main IIFE)
   var contactForm = document.getElementById('contact-form');
   if(contactForm){
@@ -1767,8 +1879,151 @@ Alugar Agora
 
   // Expose sendToHablla globally for form handlers
   window.sendToHablla = sendToHablla;
+  window.getCurrentDobra = getCurrentDobra;
 })();
 // ===== END TRACKING SYSTEM =====
+
+// ===== WHATSAPP LEAD MODAL =====
+(function(){
+  var WA_NUMBER = '5511940518767';
+  var modal = document.getElementById('whatsapp-modal');
+  var form = document.getElementById('whatsapp-form');
+  var input = document.getElementById('wa-phone');
+  var submit = document.getElementById('wa-submit');
+  var errorEl = document.getElementById('wa-phone-error');
+  var statusEl = modal ? modal.querySelector('.whatsapp-modal__status') : null;
+  var honeypot = document.getElementById('wa-website');
+  if(!modal || !form || !input || !submit) return;
+
+  var lastTriggerLocation = 'unknown';
+  var lastWaMessage = 'Olá! Gostaria de solicitar um orçamento de locação de climatizadores Chiller Peças';
+
+  var VALID_DDDS = {11:1,12:1,13:1,14:1,15:1,16:1,17:1,18:1,19:1,21:1,22:1,24:1,27:1,28:1,31:1,32:1,33:1,34:1,35:1,37:1,38:1,41:1,42:1,43:1,44:1,45:1,46:1,47:1,48:1,49:1,51:1,53:1,54:1,55:1,61:1,62:1,63:1,64:1,65:1,66:1,67:1,68:1,69:1,71:1,73:1,74:1,75:1,77:1,79:1,81:1,82:1,83:1,84:1,85:1,86:1,87:1,88:1,89:1,91:1,92:1,93:1,94:1,95:1,96:1,97:1,98:1,99:1};
+  var VALIDATION_MESSAGES = {
+    tamanho: 'Informe DDD + número (10 ou 11 dígitos).',
+    repetido: 'Esse número não parece válido. Verifique e tente novamente.',
+    ddd_invalido: 'Esse DDD não existe. Confira o código de área.',
+    formato_celular: 'Celular com 11 dígitos deve começar com 9 após o DDD.'
+  };
+
+  function applyMask(v){
+    var digits = v.replace(/\D/g,'').slice(0,11);
+    if(digits.length === 0) return '';
+    if(digits.length < 3) return '(' + digits;
+    if(digits.length < 8) return '(' + digits.slice(0,2) + ') ' + digits.slice(2);
+    if(digits.length < 11) return '(' + digits.slice(0,2) + ') ' + digits.slice(2,6) + '-' + digits.slice(6);
+    return '(' + digits.slice(0,2) + ') ' + digits.slice(2,7) + '-' + digits.slice(7);
+  }
+
+  function validatePhone(masked){
+    var digits = (masked || '').replace(/\D/g,'');
+    if(digits.length < 10 || digits.length > 11) return {ok:false, reason:'tamanho'};
+    if(/^(\d)\1+$/.test(digits)) return {ok:false, reason:'repetido'};
+    var ddd = parseInt(digits.slice(0,2), 10);
+    if(!VALID_DDDS[ddd]) return {ok:false, reason:'ddd_invalido'};
+    if(digits.length === 11 && digits[2] !== '9') return {ok:false, reason:'formato_celular'};
+    return {ok:true};
+  }
+
+  function digitsOnly(masked){ return masked.replace(/\D/g,''); }
+
+  function openModal(trigger){
+    lastTriggerLocation = (trigger && trigger.getAttribute('data-gtm-location')) || 'unknown';
+    lastWaMessage = (trigger && trigger.getAttribute('data-wa-message')) || lastWaMessage;
+    clearStatus();
+    errorEl.textContent = '';
+    input.setAttribute('aria-invalid','false');
+    try { modal.showModal(); } catch(e) { modal.setAttribute('open',''); }
+    setTimeout(function(){ input.focus(); }, 50);
+  }
+
+  function closeModal(){
+    try { modal.close(); } catch(e) { modal.removeAttribute('open'); }
+  }
+
+  function setStatus(message, kind){
+    if(!statusEl) return;
+    statusEl.textContent = message;
+    statusEl.dataset.kind = kind || '';
+  }
+  function clearStatus(){
+    if(!statusEl) return;
+    statusEl.textContent = '';
+    delete statusEl.dataset.kind;
+  }
+  function setLoading(on){
+    submit.classList.toggle('is-loading', !!on);
+    submit.disabled = !!on;
+  }
+
+  document.querySelectorAll('[data-open-whatsapp-modal]').forEach(function(el){
+    el.addEventListener('click', function(ev){
+      ev.preventDefault();
+      openModal(el);
+    });
+  });
+
+  modal.addEventListener('click', function(ev){
+    if(ev.target === modal) closeModal();
+  });
+  modal.querySelectorAll('[data-close-modal]').forEach(function(el){
+    el.addEventListener('click', closeModal);
+  });
+
+  input.addEventListener('input', function(){
+    input.value = applyMask(input.value);
+    if(errorEl.textContent) errorEl.textContent = '';
+    input.setAttribute('aria-invalid','false');
+  });
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+
+    if(submit.disabled) return;
+    submit.disabled = true;
+
+    if(honeypot && honeypot.value){
+      submit.disabled = false;
+      return;
+    }
+
+    var masked = input.value.trim();
+    var validation = validatePhone(masked);
+
+    if(!validation.ok){
+      errorEl.textContent = VALIDATION_MESSAGES[validation.reason] || 'WhatsApp inválido.';
+      input.setAttribute('aria-invalid','true');
+      input.focus();
+      submit.disabled = false;
+      return;
+    }
+
+    var digits = digitsOnly(masked);
+    var phoneE164 = '+55' + digits;
+
+    setLoading(true);
+    setStatus('Enviando…', 'loading');
+
+    var text = encodeURIComponent(lastWaMessage + '. Meu WhatsApp é ' + masked + '.');
+    var waUrl = 'https://wa.me/' + WA_NUMBER + '?text=' + text;
+
+    window.sendToHablla(lastTriggerLocation, lastWaMessage, {
+      event: 'whatsapp_modal_lead',
+      phone: phoneE164,
+      phone_local: masked
+    });
+
+    setStatus('Recebemos! Abrindo WhatsApp…', 'success');
+    setLoading(false);
+
+    setTimeout(function(){
+      window.open(waUrl, '_blank', 'noopener');
+      closeModal();
+      form.reset();
+    }, 450);
+  });
+})();
+// ===== END WHATSAPP LEAD MODAL =====
 
 (function(){
   'use strict';
