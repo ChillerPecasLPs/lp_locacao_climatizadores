@@ -1804,7 +1804,7 @@ Alugar Agora
 
   // Store params in sessionStorage on first load
   var urlParams = getUrlParams();
-  var trackingKeys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'];
+  var trackingKeys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','fbclid','msclkid','ttclid'];
   trackingKeys.forEach(function(key){
     if(urlParams[key]) sessionStorage.setItem(key, urlParams[key]);
   });
@@ -1850,7 +1850,11 @@ Alugar Agora
       utm_term: tracking.utm_term || '',
       utm_content: tracking.utm_content || '',
       gclid: tracking.gclid || '',
+      gbraid: tracking.gbraid || '',
+      wbraid: tracking.wbraid || '',
       fbclid: tracking.fbclid || '',
+      msclkid: tracking.msclkid || '',
+      ttclid: tracking.ttclid || '',
       user_agent: navigator.userAgent,
       screen_resolution: window.screen.width + 'x' + window.screen.height,
       viewport: window.innerWidth + 'x' + window.innerHeight
@@ -1918,7 +1922,9 @@ Alugar Agora
     utm_source: tracking.utm_source || '',
     utm_medium: tracking.utm_medium || '',
     utm_campaign: tracking.utm_campaign || '',
-    gclid: tracking.gclid || ''
+    gclid: tracking.gclid || '',
+    gbraid: tracking.gbraid || '',
+    wbraid: tracking.wbraid || ''
   });
 
   // Expose sendToHablla globally for form handlers
