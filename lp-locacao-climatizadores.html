@@ -908,12 +908,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .whatsapp-modal h2{font-family:var(--font-heading);text-align:center;color:var(--blue-deep);margin:0;font-size:1.4rem;text-transform:none;letter-spacing:0}
 .whatsapp-modal p#wa-modal-desc{text-align:center;color:var(--text-muted);margin:0 0 0.5rem;font-size:0.95rem}
 .whatsapp-modal label{color:#333;font-size:0.85rem;font-weight:600}
-.whatsapp-modal__phone-wrap{display:flex;align-items:stretch;border:2px solid var(--neutral-200);border-radius:10px;transition:border-color .15s,box-shadow .15s;overflow:hidden}
-.whatsapp-modal__phone-wrap:focus-within{border-color:var(--blue-light);box-shadow:0 0 0 3px rgba(16,139,209,0.18)}
-.whatsapp-modal__phone-prefix{display:flex;align-items:center;padding:0 0.6rem 0 1rem;color:var(--text-muted);font-weight:600;background:var(--neutral-100);border-right:1px solid var(--neutral-200)}
-.whatsapp-modal input[type="tel"]{border:0;border-radius:0;width:100%;padding:0.85rem 1rem 0.85rem 0.6rem;font-family:inherit;font-size:1rem}
-.whatsapp-modal input[type="tel"]:focus{outline:none}
-.whatsapp-modal__phone-wrap:has(input[aria-invalid="true"]){border-color:#d7263d;box-shadow:0 0 0 3px rgba(215,38,61,0.15)}
+.whatsapp-modal input[type="tel"]{border:2px solid var(--neutral-200);border-radius:10px;width:100%;padding:0.85rem 1rem;font-family:inherit;font-size:1rem;transition:border-color .15s,box-shadow .15s}
 .whatsapp-modal input[type="tel"]:focus{border-color:var(--blue-light);outline:none;box-shadow:0 0 0 3px rgba(16,139,209,0.18)}
 .whatsapp-modal input[aria-invalid="true"]{border-color:#d7263d;box-shadow:0 0 0 3px rgba(215,38,61,0.15)}
 .whatsapp-modal__error{color:#d7263d;font-size:0.85rem;min-height:1.1em}
@@ -1780,10 +1775,7 @@ Alugar Agora
     <h2 id="wa-modal-title">Falta só 1 passo para falar com a gente</h2>
     <p id="wa-modal-desc">Digite seu WhatsApp e a conversa já abre pronta, com sua mensagem escrita e o assunto certo. É só apertar enviar.</p>
     <label for="wa-phone">Seu WhatsApp</label>
-    <div class="whatsapp-modal__phone-wrap">
-      <span class="whatsapp-modal__phone-prefix">+55</span>
-      <input id="wa-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(11) 9XXXX-XXXX" required minlength="14" maxlength="15" aria-invalid="false" aria-describedby="wa-phone-error">
-    </div>
+    <input id="wa-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="+55 (11) 9XXXX-XXXX" required minlength="17" maxlength="19" aria-invalid="false" aria-describedby="wa-phone-error">
     <span id="wa-phone-error" class="whatsapp-modal__error" role="alert"></span>
     <button type="submit" class="btn-primary whatsapp-modal__submit cta-pulse" id="wa-submit" data-gtm-event="cta_click" data-gtm-location="modal" data-gtm-label="solicitar_orcamento" data-gtm-category="whatsapp">
       <span class="whatsapp-modal__submit-label">Ir para o WhatsApp agora</span>
@@ -1974,17 +1966,25 @@ Alugar Agora
     formato_celular: 'Celular com 11 dígitos deve começar com 9 após o DDD.'
   };
 
+  var PHONE_PREFIX = '+55 ';
+
+  function localDigits(v){
+    var raw = (v || '').replace(/\D/g,'');
+    if(raw.slice(0,2) === '55') raw = raw.slice(2);
+    return raw.slice(0,11);
+  }
+
   function applyMask(v){
-    var digits = v.replace(/\D/g,'').slice(0,11);
-    if(digits.length === 0) return '';
-    if(digits.length < 3) return '(' + digits;
-    if(digits.length < 8) return '(' + digits.slice(0,2) + ') ' + digits.slice(2);
-    if(digits.length < 11) return '(' + digits.slice(0,2) + ') ' + digits.slice(2,6) + '-' + digits.slice(6);
-    return '(' + digits.slice(0,2) + ') ' + digits.slice(2,7) + '-' + digits.slice(7);
+    var digits = localDigits(v);
+    if(digits.length === 0) return PHONE_PREFIX;
+    if(digits.length < 3) return PHONE_PREFIX + '(' + digits;
+    if(digits.length < 8) return PHONE_PREFIX + '(' + digits.slice(0,2) + ') ' + digits.slice(2);
+    if(digits.length < 11) return PHONE_PREFIX + '(' + digits.slice(0,2) + ') ' + digits.slice(2,6) + '-' + digits.slice(6);
+    return PHONE_PREFIX + '(' + digits.slice(0,2) + ') ' + digits.slice(2,7) + '-' + digits.slice(7);
   }
 
   function validatePhone(masked){
-    var digits = (masked || '').replace(/\D/g,'');
+    var digits = localDigits(masked);
     if(digits.length < 10 || digits.length > 11) return {ok:false, reason:'tamanho'};
     if(/^(\d)\1+$/.test(digits)) return {ok:false, reason:'repetido'};
     var ddd = parseInt(digits.slice(0,2), 10);
@@ -1993,7 +1993,7 @@ Alugar Agora
     return {ok:true};
   }
 
-  function digitsOnly(masked){ return masked.replace(/\D/g,''); }
+  function digitsOnly(masked){ return localDigits(masked); }
 
   function openModal(trigger){
     lastTriggerLocation = (trigger && trigger.getAttribute('data-gtm-location')) || 'unknown';
@@ -2001,8 +2001,9 @@ Alugar Agora
     clearStatus();
     errorEl.textContent = '';
     input.setAttribute('aria-invalid','false');
+    if(!input.value) input.value = PHONE_PREFIX;
     try { modal.showModal(); } catch(e) { modal.setAttribute('open',''); }
-    setTimeout(function(){ input.focus(); }, 50);
+    setTimeout(function(){ input.focus(); input.setSelectionRange(input.value.length, input.value.length); }, 50);
   }
 
   function closeModal(){
