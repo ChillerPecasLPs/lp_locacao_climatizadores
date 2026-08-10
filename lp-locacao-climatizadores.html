@@ -1879,6 +1879,16 @@ Alugar Agora
       whatsapp_utm_source: payload.utm_source,
       whatsapp_utm_campaign: payload.utm_campaign
     });
+
+    // Enhanced Conversions: push phone to dataLayer for GTM Google Ads tag
+    if(additionalData && additionalData.phone){
+      window.dataLayer.push({
+        event: 'lead_enhanced_conversion',
+        user_data: {
+          phone_number: additionalData.phone
+        }
+      });
+    }
   }
 
   // Intercept form submission (handled below in the main IIFE)
