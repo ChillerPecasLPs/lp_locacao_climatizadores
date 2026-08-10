@@ -6,17 +6,17 @@
 <title>Locação de Climatizador Evaporativo | Chiller Peças</title>
 <link rel="icon" type="image/svg+xml" href="Manual de Marca/favicon.ico.svg">
 <meta name="description" content="Alugue climatizador evaporativo com motor WEG e certificação INMETRO. Sem instalação, entrega pronta para usar. Peça seu orçamento agora.">
-<link rel="canonical" href="https://lp-locacao-climatizadores.vercel.app/">
+<link rel="canonical" href="https://locacao.climatizador.chillerpecas.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:url" content="https://lp-locacao-climatizadores.vercel.app/">
+<meta property="og:url" content="https://locacao.climatizador.chillerpecas.com.br/">
 <meta property="og:title" content="Locação de Climatizador Evaporativo | Chiller Peças">
 <meta property="og:description" content="Alugue climatizador evaporativo com motor WEG e certificação INMETRO. Sem instalação, entrega pronta para usar. Peça seu orçamento agora.">
-<meta property="og:image" content="https://lp-locacao-climatizadores.vercel.app/climatizadores-fotos/hero-novo.webp">
+<meta property="og:image" content="https://locacao.climatizador.chillerpecas.com.br/climatizadores-fotos/hero-novo.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Locação de Climatizador Evaporativo | Chiller Peças">
 <meta name="twitter:description" content="Alugue climatizador evaporativo com motor WEG e certificação INMETRO. Sem instalação, entrega pronta para usar. Peça seu orçamento agora.">
-<meta name="twitter:image" content="https://lp-locacao-climatizadores.vercel.app/climatizadores-fotos/hero-novo.webp">
+<meta name="twitter:image" content="https://locacao.climatizador.chillerpecas.com.br/climatizadores-fotos/hero-novo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -1871,24 +1871,21 @@ Alugar Agora
 
     // Push to dataLayer for GTM/GA4
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
+    var clickEvent = {
       event: 'whatsapp_click',
       whatsapp_button_id: buttonId,
       whatsapp_button_text: buttonText,
       whatsapp_dobra: payload.dobra,
       whatsapp_utm_source: payload.utm_source,
       whatsapp_utm_campaign: payload.utm_campaign
-    });
-
-    // Enhanced Conversions: push phone to dataLayer for GTM Google Ads tag
+    };
+    // Enhanced Conversions: telefone precisa estar no MESMO push que dispara
+    // a tag (o trigger escuta o evento 'whatsapp_click' e le a dataLayer no
+    // instante do disparo, sincrono; um push separado depois chega tarde demais)
     if(additionalData && additionalData.phone){
-      window.dataLayer.push({
-        event: 'lead_enhanced_conversion',
-        user_data: {
-          phone_number: additionalData.phone
-        }
-      });
+      clickEvent.user_data = { phone_number: additionalData.phone };
     }
+    window.dataLayer.push(clickEvent);
   }
 
   // Intercept form submission (handled below in the main IIFE)

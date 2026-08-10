@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lp-locacao-climatizadores.vercel.app/sitemap.xml
+Sitemap: https://locacao.climatizador.chillerpecas.com.br/sitemap.xml
